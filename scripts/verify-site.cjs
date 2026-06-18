@@ -30,7 +30,7 @@ const requiredText = [
   "receipt",
   "roleOptions",
   "v1.0.0",
-  "/downloads/pharmacy-training-tracker-v1.0.0.apk",
+  "/download/apk",
   "Installation instructions",
 ];
 
