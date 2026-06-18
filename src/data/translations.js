@@ -32,7 +32,7 @@ export const translations = {
       eyebrow: "University pharmacy training management",
       title: "Track pharmacy training with clarity.",
       body: "A professional Android app for attendance, prescription collection, student progress, supervisor review, and admin monitoring across pharmacy training programs.",
-      trust: "Built for colleges, pharmacies, supervisors, and training administrators.",
+      trust: "Built for colleges, pharmacies, supervisors, training administrators, and institutional activation programs.",
       previewTitle: "Training dashboard",
       previewItems: [
         ["Attendance", "92%"],
@@ -62,6 +62,10 @@ export const translations = {
         {
           title: "Ready for institutional reporting",
           body: "Give program coordinators a dependable view of student progress without turning the site into a storefront.",
+        },
+        {
+          title: "Institutional token supply",
+          body: "Universities and colleges may request batch activation token packages through our authorized local distributor.",
         },
       ],
       sections: [
@@ -172,6 +176,11 @@ export const translations = {
             "Activation codes are issued only after payment and program details are confirmed by the app owner.",
         },
         {
+          question: "Can universities or colleges request tokens in batches?",
+          answer:
+            "Yes. Universities and colleges may request batch activation tokens through our authorized local distributor. Contact the team for institutional onboarding details, required information, and availability.",
+        },
+        {
           question: "Can the site run on Cloudflare Pages?",
           answer:
             "Yes. It is a lightweight static Vite build with Cloudflare headers and redirects copied into the final dist folder.",
@@ -182,15 +191,15 @@ export const translations = {
       eyebrow: "Start a controlled rollout",
       title: "Prepare your pharmacy training cohort with verified activation and clear supervisor review.",
       subtitle:
-        "Use the activation form for approved students, supervisors, or admin users, then install the Android APK when your code is issued.",
+        "Use the activation form for approved students, supervisors, or admin users. Universities and colleges can contact us for batch activation token coordination through the local distributor.",
     },
     download: {
       title: "Download APK",
       subtitle:
         "Install the Android app after receiving an activation code from the training team.",
       cardTitle: "Android package",
-      status: "APK link placeholder",
-      body: "Add the final APK file URL here when the release is approved for distribution.",
+      status: "Official APK release",
+      body: "Download the Android APK from the official website route after receiving an activation code from the training team.",
       release: {
         versionLabel: "Version",
         version: "v1.0.0",
@@ -198,10 +207,10 @@ export const translations = {
         date: "June 18, 2026",
         sizeLabel: "File size",
         size: "60.9 MB",
-        linkLabel: "Secure APK download path",
+        linkLabel: "Official APK download path",
         href: "/download/apk",
-        button: "Download placeholder APK",
-        note: "This link is a placeholder until the signed production APK is uploaded.",
+        button: "Download APK",
+        note: "Use this official download route and avoid APK files shared from unknown sources.",
       },
       installTitle: "Installation instructions",
       installSteps: [
@@ -220,7 +229,7 @@ export const translations = {
     activation: {
       title: "Request Activation",
       subtitle:
-        "Submit payment and program details so the team can verify your request and issue an activation code.",
+        "Submit payment and program details so the team can verify your request and issue an activation code. Institutional batch token requests for universities and colleges are coordinated through our authorized local distributor.",
       formTitle: "Activation form",
       fields: {
         fullName: "Full name",
@@ -246,30 +255,36 @@ export const translations = {
         notes: "Any details the activation team should know",
       },
       notice:
-        "Submitting this form does not activate the app automatically. Activation is completed after payment confirmation.",
+        "Submitting this form does not activate the app automatically. Activation is completed after payment confirmation. For university or college batch token requests, contact the team before sending payment.",
     },
     payment: {
       title: "Payment Instructions",
       subtitle:
-        "Use the official payment details provided by the app owner, then request activation with your transfer information.",
+        "Use the official payment details provided by the app owner or authorized local distributor, then request activation with your transfer information.",
       warning:
         "Activation codes are issued only after payment confirmation in our account. Receipt screenshots alone are not final proof of payment.",
+      institutional:
+        "Universities and colleges may arrange batch activation token purchases through our authorized local distributor. Please contact us first for institutional procedures, quantities, and required documentation.",
       stepsTitle: "Payment process",
       steps: [
-        "Send the payment using the approved Qi transfer details.",
+        "Confirm the approved payment channel before sending funds, especially for institutional or batch token requests.",
         "Keep the sender name, phone number, payment date, and amount.",
-        "Submit the activation form with a receipt screenshot placeholder.",
+        "Submit the activation form with the receipt screenshot if requested.",
         "Wait for account confirmation before receiving the activation code.",
       ],
     },
     contact: {
       title: "Contact",
       subtitle:
-        "For university activation, supervisor onboarding, or admin monitoring requests, contact the Pharmacy Training Tracker team.",
+        "For university activation, batch token purchases, supervisor onboarding, or admin monitoring requests, contact the Pharmacy Training Tracker team.",
       cards: [
         { title: "Email", body: "activation@example.com" },
         { title: "Phone", body: "+964 000 000 0000" },
         { title: "Hours", body: "Sunday to Thursday, 9:00 AM - 5:00 PM" },
+        {
+          title: "Institutional requests",
+          body: "Batch activation token purchases for universities and colleges are handled through our authorized local distributor.",
+        },
       ],
       formTitle: "Send a message",
       fields: {
@@ -280,7 +295,7 @@ export const translations = {
       placeholders: {
         name: "Your name",
         email: "name@example.com",
-        message: "How can we help?",
+        message: "Tell us whether your request is for individual activation or an institutional batch token request.",
       },
       send: "Send message",
     },
@@ -375,7 +390,7 @@ export const translations = {
       eyebrow: "إدارة التدريب الصيدلاني الجامعي",
       title: "تابع التدريب الصيدلاني بوضوح.",
       body: "تطبيق أندرويد احترافي لإدارة الحضور في الصيدليات، جمع الوصفات، تقدم الطالب، مراجعة المشرف، ومتابعة الإدارة والجامعة.",
-      trust: "مصمم للكليات والصيدليات والمشرفين وإدارات التدريب.",
+      trust: "مصمم للكليات والصيدليات والمشرفين وإدارات التدريب وبرامج التفعيل المؤسسية.",
       previewTitle: "لوحة التدريب",
       previewItems: [
         ["الحضور", "92%"],
@@ -455,8 +470,8 @@ export const translations = {
       subtitle:
         "ثبت تطبيق أندرويد بعد استلام رمز التفعيل من فريق التدريب.",
       cardTitle: "حزمة أندرويد",
-      status: "رابط APK مؤقت",
-      body: "أضف رابط ملف APK النهائي هنا بعد اعتماد الإصدار للتوزيع.",
+      status: "إصدار APK رسمي",
+      body: "حمل تطبيق أندرويد من رابط الموقع الرسمي بعد استلام رمز التفعيل من فريق التدريب.",
       requirementsTitle: "قبل التثبيت",
       requirements: [
         "استخدم رابط APK الرسمي المقدم من مالك التطبيق.",
@@ -467,7 +482,7 @@ export const translations = {
     activation: {
       title: "طلب التفعيل",
       subtitle:
-        "أرسل تفاصيل الدفع والبرنامج ليتمكن الفريق من التحقق وإصدار رمز التفعيل.",
+        "أرسل تفاصيل الدفع والبرنامج ليتمكن الفريق من التحقق وإصدار رمز التفعيل. يتم تنسيق طلبات رموز التفعيل بالكميات للجامعات والكليات من خلال الموزع المحلي المعتمد.",
       formTitle: "نموذج التفعيل",
       fields: {
         fullName: "الاسم الكامل",
@@ -493,30 +508,36 @@ export const translations = {
         notes: "أي تفاصيل يحتاج فريق التفعيل لمعرفتها",
       },
       notice:
-        "إرسال هذا النموذج لا يفعل التطبيق تلقائيا. يتم التفعيل بعد تأكيد وصول الدفع.",
+        "إرسال هذا النموذج لا يفعل التطبيق تلقائيا. يتم التفعيل بعد تأكيد وصول الدفع. لطلبات رموز التفعيل بالكميات للجامعات أو الكليات، يرجى التواصل مع الفريق قبل إرسال الدفع.",
     },
     payment: {
       title: "تعليمات الدفع",
       subtitle:
-        "استخدم تفاصيل الدفع الرسمية المقدمة من مالك التطبيق، ثم اطلب التفعيل مع معلومات التحويل.",
+        "استخدم تفاصيل الدفع الرسمية المقدمة من مالك التطبيق أو الموزع المحلي المعتمد، ثم اطلب التفعيل مع معلومات التحويل.",
       warning:
         "تصدر رموز التفعيل فقط بعد تأكيد وصول الدفع إلى حسابنا. صور الوصولات وحدها ليست دليلا نهائيا على الدفع.",
+      institutional:
+        "يمكن للجامعات والكليات ترتيب شراء رموز التفعيل بالكميات من خلال الموزع المحلي المعتمد. يرجى التواصل معنا أولا لمعرفة الإجراءات المؤسسية والكميات والمستندات المطلوبة.",
       stepsTitle: "خطوات الدفع",
       steps: [
-        "أرسل الدفع باستخدام تفاصيل تحويل Qi المعتمدة.",
+        "تأكد من قناة الدفع المعتمدة قبل إرسال المبلغ، خصوصا للطلبات المؤسسية أو رموز التفعيل بالكميات.",
         "احتفظ باسم المرسل ورقم الهاتف وتاريخ الدفع والمبلغ.",
-        "أرسل نموذج التفعيل مع مكان رفع صورة الوصل.",
+        "أرسل نموذج التفعيل مع صورة الوصل إذا كانت مطلوبة.",
         "انتظر تأكيد وصول المبلغ قبل استلام رمز التفعيل.",
       ],
     },
     contact: {
       title: "اتصل بنا",
       subtitle:
-        "لتفعيل الجامعات أو انضمام المشرفين أو طلبات متابعة الإدارة، تواصل مع فريق Pharmacy Training Tracker.",
+        "لتفعيل الجامعات أو شراء رموز التفعيل بالكميات أو انضمام المشرفين أو طلبات متابعة الإدارة، تواصل مع فريق Pharmacy Training Tracker.",
       cards: [
         { title: "البريد الإلكتروني", body: "activation@example.com" },
         { title: "الهاتف", body: "+964 000 000 0000" },
         { title: "أوقات العمل", body: "الأحد إلى الخميس، 9:00 صباحا - 5:00 مساء" },
+        {
+          title: "الطلبات المؤسسية",
+          body: "تتم معالجة شراء رموز التفعيل بالكميات للجامعات والكليات من خلال الموزع المحلي المعتمد.",
+        },
       ],
       formTitle: "أرسل رسالة",
       fields: {
@@ -527,7 +548,7 @@ export const translations = {
       placeholders: {
         name: "اسمك",
         email: "name@example.com",
-        message: "كيف يمكننا المساعدة؟",
+        message: "وضح هل الطلب لتفعيل فردي أم لطلب مؤسسي لرموز تفعيل بالكميات.",
       },
       send: "إرسال الرسالة",
     },
@@ -611,6 +632,10 @@ translations.ar.home.platform = [
     title: "جاهز للتقارير المؤسسية",
     body: "يوفر لمنسقي البرامج رؤية موثوقة لتقدم الطلاب بدون أن يبدو الموقع كمتجر إلكتروني.",
   },
+  {
+    title: "توفير رموز التفعيل للمؤسسات",
+    body: "يمكن للجامعات والكليات طلب حزم رموز تفعيل بالكميات من خلال الموزع المحلي المعتمد.",
+  },
 ];
 
 translations.ar.home.workflowSubtitle =
@@ -662,6 +687,11 @@ translations.ar.faq = {
         "تصدر رموز التفعيل فقط بعد تأكيد الدفع وتفاصيل البرنامج من قبل مالك التطبيق.",
     },
     {
+      question: "هل يمكن للجامعات أو الكليات طلب رموز التفعيل بالكميات؟",
+      answer:
+        "نعم. يمكن للجامعات والكليات طلب رموز التفعيل بالكميات من خلال الموزع المحلي المعتمد. يرجى التواصل مع الفريق لمعرفة تفاصيل الانضمام المؤسسي والمعلومات المطلوبة والتوفر.",
+    },
+    {
       question: "هل يمكن استضافة الموقع على Cloudflare Pages؟",
       answer:
         "نعم. الموقع مبني كإخراج Vite ثابت وخفيف مع نسخ إعدادات Cloudflare للـ headers والـ redirects إلى مجلد dist.",
@@ -673,7 +703,7 @@ translations.ar.cta = {
   eyebrow: "ابدأ إطلاقا منظما",
   title: "جهز دفعة التدريب الصيدلاني بتفعيل موثق ومراجعة مشرفين واضحة.",
   subtitle:
-    "استخدم نموذج التفعيل للطلاب أو المشرفين أو مستخدمي الإدارة المعتمدين، ثم ثبت تطبيق أندرويد بعد إصدار الرمز.",
+    "استخدم نموذج التفعيل للطلاب أو المشرفين أو مستخدمي الإدارة المعتمدين. يمكن للجامعات والكليات التواصل معنا لتنسيق رموز التفعيل بالكميات من خلال الموزع المحلي.",
 };
 
 Object.assign(translations.ar.download, {
@@ -684,10 +714,10 @@ Object.assign(translations.ar.download, {
     date: "18 حزيران 2026",
     sizeLabel: "حجم الملف",
     size: "60.9 MB",
-    linkLabel: "رابط APK مؤقت",
+    linkLabel: "رابط تحميل APK الرسمي",
     href: "/download/apk",
-    button: "تحميل APK مؤقت",
-    note: "هذا الرابط مؤقت إلى أن يتم رفع ملف APK الإنتاجي الموقع.",
+    button: "تحميل APK",
+    note: "استخدم رابط التحميل الرسمي وتجنب ملفات APK المرسلة من مصادر غير معروفة.",
   },
   installTitle: "تعليمات التثبيت",
   installSteps: [

@@ -711,6 +711,11 @@ function PaymentPage({ t }) {
         <article className="rounded-lg border border-emerald-600/30 bg-emerald-50 p-8">
           <IconBadge icon={Banknote} tone="green" />
           <p className="mt-6 text-xl font-black leading-9 text-navy-900">{t.payment.warning}</p>
+          {t.payment.institutional ? (
+            <p className="mt-5 rounded-lg border border-emerald-600/20 bg-white/70 p-4 text-sm font-bold leading-7 text-navy-800">
+              {t.payment.institutional}
+            </p>
+          ) : null}
         </article>
         <article className="rounded-lg border border-clinical-200 bg-white p-8 shadow-sm">
           <h2 className="text-2xl font-black text-navy-900">{t.payment.stepsTitle}</h2>
@@ -737,7 +742,7 @@ function ContactPage({ t }) {
       <div className="mt-10 grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="grid gap-4">
           {t.contact.cards.map((card, index) => {
-            const icons = [Mail, Phone, MonitorCheck];
+            const icons = [Mail, Phone, MonitorCheck, Building2];
             return <Card key={card.title} icon={icons[index]} title={card.title} body={card.body} />;
           })}
         </div>
