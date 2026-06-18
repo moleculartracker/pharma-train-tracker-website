@@ -464,9 +464,9 @@ function HomePage({ t, setPage }) {
   return (
     <>
       <Hero t={t} setPage={setPage} />
-      <section className="mx-auto -mt-8 grid max-w-7xl gap-4 px-4 pb-14 sm:px-6 lg:grid-cols-3 lg:px-8">
+      <section className="mx-auto -mt-8 grid max-w-7xl gap-4 px-4 pb-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         {t.home.platform.map((section, index) => {
-          const icons = [GraduationCap, ShieldCheck, BarChart3];
+          const icons = [GraduationCap, ShieldCheck, BarChart3, Building2];
           return (
             <article key={section.title} className="rounded-lg border border-clinical-200 bg-white p-6 shadow-soft">
               <IconBadge icon={icons[index]} tone={index === 1 ? "green" : "blue"} />
