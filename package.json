@@ -1,5 +1,5 @@
 {
-  "name": "pharmacy-training-track-pages",
+  "name": "pharma-train-tracker-pages",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "node scripts/preview-server.mjs",
     "verify": "node scripts/verify-site.cjs",
-    "deploy": "npx wrangler pages deploy dist"
+    "deploy": "npx wrangler pages deploy dist --project-name pharma-train-tracker"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

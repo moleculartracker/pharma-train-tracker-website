@@ -23,8 +23,8 @@ Direct upload with Wrangler:
 ```powershell
 npm install
 npx wrangler login
-npx wrangler pages project create pharmacy-training-track
-npx wrangler pages deploy dist
+npx wrangler pages project create pharma-train-tracker
+npx wrangler pages deploy dist --project-name pharma-train-tracker
 ```
 
 ## APK Download Proxy
@@ -44,7 +44,7 @@ Production variables/secrets:
 Set the secret from this folder:
 
 ```powershell
-npx.cmd wrangler pages secret put GITHUB_TOKEN --project-name pharmacy-training-track
+npx.cmd wrangler pages secret put GITHUB_TOKEN --project-name pharma-train-tracker
 ```
 
 For local testing, copy `.dev.vars.example` to `.dev.vars` and put the real token there. Do not commit `.dev.vars`.
