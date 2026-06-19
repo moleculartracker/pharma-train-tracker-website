@@ -31,7 +31,7 @@ export const translations = {
     hero: {
       eyebrow: "University pharmacy training management",
       title: "Track pharmacy training with clarity.",
-      body: "A professional Android app for attendance, prescription collection, student progress, supervisor review, and admin monitoring across pharmacy training programs.",
+      body: "A professional Android platform for attendance, prescription collection, supervisor-led studies, field data collection, live map monitoring, and university oversight across pharmacy training programs.",
       trust: "Built for colleges, pharmacies, supervisors, training administrators, and institutional activation programs.",
       previewTitle: "Training dashboard",
       previewItems: [
@@ -41,7 +41,7 @@ export const translations = {
       ],
       stats: [
         { value: "RTL + LTR", label: "Arabic and English" },
-        { value: "5", label: "training workflows" },
+        { value: "Map", label: "live student monitoring" },
         { value: "Cloudflare", label: "hosting ready" },
       ],
       consoleTitle: "College training operations",
@@ -57,11 +57,11 @@ export const translations = {
         },
         {
           title: "Designed for field verification",
-          body: "Keep attendance, prescription activity, and supervisor feedback organized around real pharmacy rotations.",
+          body: "Keep attendance, prescription activity, location check-ins, and supervisor feedback organized around real pharmacy rotations.",
         },
         {
           title: "Ready for institutional reporting",
-          body: "Give program coordinators a dependable view of student progress without turning the site into a storefront.",
+          body: "Give coordinators a dependable view of progress, field activity, and student-collected indicators across training sites.",
         },
         {
           title: "Institutional token supply",
@@ -71,11 +71,11 @@ export const translations = {
       sections: [
         {
           title: "One workspace for practical pharmacy training.",
-          body: "Students record attendance and prescriptions, supervisors review progress, and university admins monitor training quality from a clear role-based experience.",
+          body: "Students record attendance, prescriptions, and field observations; supervisors review progress and studies; university admins monitor training quality from a clear role-based experience.",
         },
         {
           title: "Professional controls for real training programs.",
-          body: "Designed for field training where verification, visibility, and accountable review matter every day.",
+          body: "Designed for field training where location visibility, offline check-in support, automatic checkout, and accountable review matter every day.",
         },
       ],
       workflowTitle: "How the training flow works",
@@ -84,19 +84,19 @@ export const translations = {
       workflow: [
         {
           title: "Student attendance",
-          body: "Students check in at pharmacy training locations and keep their progress organized.",
+          body: "Students check in at pharmacy training locations, with support for offline check-in when connectivity is limited.",
         },
         {
           title: "Prescription collection",
-          body: "Training activity can include logged prescription counts and learning evidence.",
+          body: "Training activity can include logged prescription counts, structured observations, and learning evidence.",
         },
         {
           title: "Supervisor review",
-          body: "Supervisors review submitted activity and help students improve during rotations.",
+          body: "Supervisors review submitted activity, prepare study forms, and follow collected field data during rotations.",
         },
         {
           title: "University monitoring",
-          body: "Admins follow attendance, training status, and program-level activity.",
+          body: "Admins follow attendance, live map status, automatic checkout records, and program-level activity.",
         },
       ],
     },
@@ -104,11 +104,11 @@ export const translations = {
       eyebrow: "Platform modules",
       title: "Features built for pharmacy training teams",
       subtitle:
-        "Clean role-based tools for students, supervisors, admins, and university training offices.",
+        "Clean role-based tools for students, supervisors, admins, study coordination, field data collection, and university training offices.",
       cards: [
         {
           title: "Attendance tracking",
-          body: "Monitor student attendance during practical pharmacy training with clear status visibility.",
+          body: "Monitor student attendance during practical pharmacy training with clear check-in, checkout, and status visibility.",
         },
         {
           title: "Prescription collection",
@@ -116,15 +116,27 @@ export const translations = {
         },
         {
           title: "Progress overview",
-          body: "Follow student completion, activity totals, and training readiness in one place.",
+          body: "Follow completion, activity totals, map status, and training readiness in one place.",
         },
         {
-          title: "Supervisor review",
-          body: "Give supervisors a focused path to review student activity and training notes.",
+          title: "Supervisor studies",
+          body: "Allow supervisors to organize study questions and collect structured field data through assigned students.",
         },
         {
-          title: "Admin monitoring",
-          body: "Support university and college teams with organized monitoring across cohorts.",
+          title: "Community behavior indicators",
+          body: "Support aggregated, non-patient-identifying observations that may help describe community pharmacy behavior and training patterns.",
+        },
+        {
+          title: "Live map monitoring",
+          body: "Give authorized university or admin users a map-based view of active student training locations and status.",
+        },
+        {
+          title: "Offline check-in",
+          body: "Support check-in continuity when internet access is weak, with syncing when connectivity returns.",
+        },
+        {
+          title: "Automatic checkout",
+          body: "Help reduce missed checkout records with automatic checkout rules for practical training sessions.",
         },
         {
           title: "Bilingual interface",
@@ -133,25 +145,25 @@ export const translations = {
       ],
     },
     screenshots: {
-      eyebrow: "App interface placeholders",
+      eyebrow: "App interface overview",
       title: "Screens for the workflows your team will manage",
       subtitle:
-        "Lightweight UI placeholders show where app screenshots can be inserted later without adding heavy assets or patient imagery.",
+        "Interface sections highlight the operational views used by students, supervisors, and university administrators without patient or human face imagery.",
       items: [
         {
-          title: "Admin monitoring",
-          caption: "Cohort and university overview",
-          lines: ["Attendance compliance", "Cohort completion", "Supervisor exceptions"],
+          title: "Live monitoring",
+          caption: "Cohort map and university overview",
+          lines: ["Active training locations", "Attendance compliance", "Checkout status"],
         },
         {
           title: "Student mobile app",
           caption: "Training activity capture",
-          lines: ["Check-in status", "Prescription collection", "Progress summary"],
+          lines: ["Offline check-in", "Prescription collection", "Automatic checkout"],
         },
         {
-          title: "Supervisor review",
-          caption: "Structured approval workflow",
-          lines: ["Submitted activity", "Review decision", "Follow-up notes"],
+          title: "Supervisor studies",
+          caption: "Structured field data workflow",
+          lines: ["Study questions", "Student observations", "Aggregated indicators"],
         },
       ],
     },
@@ -168,7 +180,7 @@ export const translations = {
         {
           question: "Does the website store patient photos?",
           answer:
-            "No. The website and visual placeholders avoid patient or human faces, and the product copy is written around training records rather than patient-identifying media.",
+            "No. The website avoids patient or human faces, and the product copy is written around training records and non-patient-identifying operational data.",
         },
         {
           question: "When are activation codes issued?",
@@ -181,9 +193,9 @@ export const translations = {
             "Yes. Universities and colleges may request batch activation tokens through our authorized local distributor. Contact the team for institutional onboarding details, required information, and availability.",
         },
         {
-          question: "Can the site run on Cloudflare Pages?",
+          question: "Does the app support map monitoring and offline check-in?",
           answer:
-            "Yes. It is a lightweight static Vite build with Cloudflare headers and redirects copied into the final dist folder.",
+            "Yes. The platform copy describes live student monitoring on a map, offline check-in support, and automatic checkout workflows for authorized training users.",
         },
       ],
     },
@@ -198,8 +210,8 @@ export const translations = {
       subtitle:
         "Install the Android app after receiving an activation code from the training team.",
       cardTitle: "Android package",
-      status: "Official APK release",
-      body: "Download the Android APK from the official website route after receiving an activation code from the training team.",
+      status: "Verified APK release",
+      body: "Download the Android APK after receiving an activation code from the training team.",
       release: {
         versionLabel: "Version",
         version: "v1.0.0",
@@ -207,21 +219,21 @@ export const translations = {
         date: "June 18, 2026",
         sizeLabel: "File size",
         size: "60.9 MB",
-        linkLabel: "Official APK download path",
+        linkLabel: "APK download path",
         href: "/download/apk",
         button: "Download APK",
-        note: "Use this official download route and avoid APK files shared from unknown sources.",
+        note: "Download only from this website and avoid APK files shared from unknown sources.",
       },
       installTitle: "Installation instructions",
       installSteps: [
-        "Download the APK from the official link shown on this page.",
+        "Download the APK from this page.",
         "Open the downloaded file on your Android device.",
         "If prompted, allow installation from this trusted source.",
         "Launch the app and enter your activation code when requested.",
       ],
       requirementsTitle: "Before installing",
       requirements: [
-        "Use the official APK link provided by the app owner.",
+        "Use the APK link provided on this website.",
         "Keep your activation code ready before first login.",
         "Install only on the device used for pharmacy training.",
       ],
@@ -260,7 +272,7 @@ export const translations = {
     payment: {
       title: "Payment Instructions",
       subtitle:
-        "Use the official payment details provided by the app owner or authorized local distributor, then request activation with your transfer information.",
+        "Use the approved payment details provided by the app owner or authorized local distributor, then request activation with your transfer information.",
       warning:
         "Activation codes are issued only after payment confirmation in our account. Receipt screenshots alone are not final proof of payment.",
       institutional:
@@ -305,11 +317,11 @@ export const translations = {
       sections: [
         {
           title: "Purpose",
-          body: "Pharmacy Training Tracker supports pharmacy training management for students, supervisors, and university administrators.",
+          body: "Pharmacy Training Tracker supports pharmacy training management for students, supervisors, field studies, and university administrators.",
         },
         {
           title: "Information collected",
-          body: "The app may collect account details, role information, attendance records, prescription collection counts, training notes, and activation/payment verification details.",
+          body: "The app may collect account details, role information, attendance records, location check-in data, prescription collection counts, student-submitted observations, training notes, supervisor study responses, and activation/payment verification details.",
         },
         {
           title: "Patient privacy",
@@ -317,11 +329,11 @@ export const translations = {
         },
         {
           title: "Use of information",
-          body: "Information is used to manage activation, track training progress, support supervisor review, and provide university monitoring.",
+          body: "Information is used to manage activation, track training progress, support supervisor review and studies, provide live training monitoring, and generate aggregated training indicators for authorized university users.",
         },
         {
           title: "Contact",
-          body: "Privacy questions can be sent to the official contact email listed on this website.",
+          body: "Privacy questions can be sent to the contact email listed on this website.",
         },
       ],
     },
@@ -389,7 +401,7 @@ export const translations = {
     hero: {
       eyebrow: "إدارة التدريب الصيدلاني الجامعي",
       title: "تابع التدريب الصيدلاني بوضوح.",
-      body: "تطبيق أندرويد احترافي لإدارة الحضور في الصيدليات، جمع الوصفات، تقدم الطالب، مراجعة المشرف، ومتابعة الإدارة والجامعة.",
+      body: "منصة أندرويد احترافية لإدارة الحضور، جمع الوصفات، دراسات المشرفين، جمع البيانات الميدانية، المتابعة الحية على الخريطة، ومتابعة الجامعة لبرامج التدريب الصيدلاني.",
       trust: "مصمم للكليات والصيدليات والمشرفين وإدارات التدريب وبرامج التفعيل المؤسسية.",
       previewTitle: "لوحة التدريب",
       previewItems: [
@@ -399,7 +411,7 @@ export const translations = {
       ],
       stats: [
         { value: "RTL + LTR", label: "العربية والإنجليزية" },
-        { value: "5", label: "مسارات تدريب" },
+        { value: "خريطة", label: "متابعة الطلاب الحية" },
         { value: "Cloudflare", label: "جاهز للاستضافة" },
       ],
     },
@@ -407,41 +419,41 @@ export const translations = {
       sections: [
         {
           title: "مساحة واحدة للتدريب الصيدلاني العملي.",
-          body: "يسجل الطلاب الحضور والوصفات، ويراجع المشرفون التقدم، وتتابع إدارات الجامعات جودة التدريب من تجربة واضحة حسب الدور.",
+          body: "يسجل الطلاب الحضور والوصفات والملاحظات الميدانية، ويراجع المشرفون التقدم والدراسات، وتتابع إدارات الجامعات جودة التدريب من تجربة واضحة حسب الدور.",
         },
         {
           title: "ضوابط احترافية لبرامج التدريب الواقعية.",
-          body: "مصمم للتدريب الميداني حيث تكون الموثوقية والوضوح والمراجعة المسؤولة مهمة كل يوم.",
+          body: "مصمم للتدريب الميداني حيث تكون رؤية الموقع، ودعم تسجيل الحضور دون اتصال، والخروج التلقائي، والمراجعة المسؤولة مهمة كل يوم.",
         },
       ],
       workflowTitle: "كيف يعمل مسار التدريب",
       workflow: [
         {
           title: "حضور الطالب",
-          body: "يسجل الطلاب حضورهم في مواقع التدريب الصيدلاني ويحافظون على تنظيم تقدمهم.",
+          body: "يسجل الطلاب حضورهم في مواقع التدريب الصيدلاني مع دعم تسجيل الحضور دون اتصال عند ضعف الإنترنت.",
         },
         {
           title: "جمع الوصفات",
-          body: "يمكن أن يتضمن النشاط التدريبي أعداد الوصفات وأدلة التعلم بدون كشف هوية المرضى.",
+          body: "يمكن أن يتضمن النشاط التدريبي أعداد الوصفات والملاحظات المنظمة وأدلة التعلم بدون كشف هوية المرضى.",
         },
         {
           title: "مراجعة المشرف",
-          body: "يراجع المشرفون نشاط الطلاب وملاحظات التدريب لدعم التحسن أثناء الدورات.",
+          body: "يراجع المشرفون نشاط الطلاب، وينظمون نماذج الدراسات، ويتابعون البيانات الميدانية المجموعة أثناء الدورات.",
         },
         {
           title: "متابعة الجامعة",
-          body: "تتابع الإدارة الحضور وحالة التدريب والنشاط العام للبرنامج.",
+          body: "تتابع الإدارة الحضور، والحالة الحية على الخريطة، وسجلات الخروج التلقائي، والنشاط العام للبرنامج.",
         },
       ],
     },
     features: {
       title: "مميزات مبنية لفرق التدريب الصيدلاني",
       subtitle:
-        "أدوات واضحة حسب الدور للطلاب والمشرفين والإدارة ومكاتب التدريب الجامعي.",
+        "أدوات واضحة حسب الدور للطلاب والمشرفين والإدارة وتنسيق الدراسات وجمع البيانات الميدانية ومكاتب التدريب الجامعي.",
       cards: [
         {
           title: "تتبع الحضور",
-          body: "متابعة حضور الطلاب أثناء التدريب الصيدلاني العملي مع وضوح حالة كل طالب.",
+          body: "متابعة حضور الطلاب أثناء التدريب الصيدلاني العملي مع وضوح تسجيل الدخول والخروج والحالة.",
         },
         {
           title: "جمع الوصفات",
@@ -449,15 +461,27 @@ export const translations = {
         },
         {
           title: "نظرة على التقدم",
-          body: "متابعة الإنجاز وإجمالي الأنشطة وجاهزية التدريب من مكان واحد.",
+          body: "متابعة الإنجاز وإجمالي الأنشطة وحالة الخريطة وجاهزية التدريب من مكان واحد.",
         },
         {
-          title: "مراجعة المشرف",
-          body: "مسار مركز للمشرفين لمراجعة نشاط الطالب وملاحظات التدريب.",
+          title: "دراسات المشرفين",
+          body: "تمكين المشرفين من تنظيم أسئلة الدراسات وجمع بيانات ميدانية منظمة من خلال الطلاب المكلفين.",
         },
         {
-          title: "متابعة الإدارة",
-          body: "دعم فرق الجامعة والكلية في متابعة منظمة للدفعات التدريبية.",
+          title: "مؤشرات سلوك المجتمع",
+          body: "دعم ملاحظات مجمعة لا تكشف هوية المرضى قد تساعد في وصف سلوك المجتمع في الصيدليات وأنماط التدريب.",
+        },
+        {
+          title: "متابعة حية على الخريطة",
+          body: "توفير عرض على الخريطة للمستخدمين المخولين في الجامعة أو الإدارة لمواقع تدريب الطلاب النشطة وحالاتهم.",
+        },
+        {
+          title: "تسجيل حضور دون اتصال",
+          body: "دعم استمرار تسجيل الحضور عند ضعف الإنترنت مع المزامنة عند عودة الاتصال.",
+        },
+        {
+          title: "خروج تلقائي",
+          body: "المساعدة في تقليل سجلات الخروج المفقودة من خلال قواعد خروج تلقائي لجلسات التدريب العملي.",
         },
         {
           title: "واجهة ثنائية اللغة",
@@ -470,11 +494,11 @@ export const translations = {
       subtitle:
         "ثبت تطبيق أندرويد بعد استلام رمز التفعيل من فريق التدريب.",
       cardTitle: "حزمة أندرويد",
-      status: "إصدار APK رسمي",
-      body: "حمل تطبيق أندرويد من رابط الموقع الرسمي بعد استلام رمز التفعيل من فريق التدريب.",
+      status: "إصدار APK موثق",
+      body: "حمل تطبيق أندرويد بعد استلام رمز التفعيل من فريق التدريب.",
       requirementsTitle: "قبل التثبيت",
       requirements: [
-        "استخدم رابط APK الرسمي المقدم من مالك التطبيق.",
+        "استخدم رابط APK الموجود في هذا الموقع.",
         "احتفظ برمز التفعيل قبل تسجيل الدخول لأول مرة.",
         "ثبت التطبيق فقط على الجهاز المستخدم للتدريب الصيدلاني.",
       ],
@@ -513,7 +537,7 @@ export const translations = {
     payment: {
       title: "تعليمات الدفع",
       subtitle:
-        "استخدم تفاصيل الدفع الرسمية المقدمة من مالك التطبيق أو الموزع المحلي المعتمد، ثم اطلب التفعيل مع معلومات التحويل.",
+        "استخدم تفاصيل الدفع المعتمدة المقدمة من مالك التطبيق أو الموزع المحلي المعتمد، ثم اطلب التفعيل مع معلومات التحويل.",
       warning:
         "تصدر رموز التفعيل فقط بعد تأكيد وصول الدفع إلى حسابنا. صور الوصولات وحدها ليست دليلا نهائيا على الدفع.",
       institutional:
@@ -558,11 +582,11 @@ export const translations = {
       sections: [
         {
           title: "الغرض",
-          body: "يدعم Pharmacy Training Tracker إدارة التدريب الصيدلاني للطلاب والمشرفين وإدارات الجامعات.",
+          body: "يدعم Pharmacy Training Tracker إدارة التدريب الصيدلاني للطلاب والمشرفين والدراسات الميدانية وإدارات الجامعات.",
         },
         {
           title: "المعلومات التي يتم جمعها",
-          body: "قد يجمع التطبيق تفاصيل الحساب والدور وسجلات الحضور وأعداد جمع الوصفات وملاحظات التدريب وتفاصيل التحقق من التفعيل والدفع.",
+          body: "قد يجمع التطبيق تفاصيل الحساب والدور وسجلات الحضور وبيانات تسجيل الموقع وأعداد جمع الوصفات وملاحظات الطلاب الميدانية وملاحظات التدريب وإجابات دراسات المشرف وتفاصيل التحقق من التفعيل والدفع.",
         },
         {
           title: "خصوصية المرضى",
@@ -570,11 +594,11 @@ export const translations = {
         },
         {
           title: "استخدام المعلومات",
-          body: "تستخدم المعلومات لإدارة التفعيل وتتبع تقدم التدريب ودعم مراجعة المشرف وتوفير متابعة الجامعة.",
+          body: "تستخدم المعلومات لإدارة التفعيل وتتبع تقدم التدريب ودعم مراجعة المشرف والدراسات وتوفير متابعة التدريب الحية وإنشاء مؤشرات تدريب مجمعة للمستخدمين المخولين في الجامعة.",
         },
         {
           title: "التواصل",
-          body: "يمكن إرسال أسئلة الخصوصية إلى البريد الرسمي المذكور في هذا الموقع.",
+          body: "يمكن إرسال أسئلة الخصوصية إلى بريد التواصل المذكور في هذا الموقع.",
         },
       ],
     },
@@ -626,11 +650,11 @@ translations.ar.home.platform = [
   },
   {
     title: "مناسب للتحقق الميداني",
-    body: "ينظم الحضور ونشاط الوصفات وملاحظات المشرف ضمن دورات التدريب الواقعية في الصيدليات.",
+    body: "ينظم الحضور ونشاط الوصفات وتسجيلات الموقع وملاحظات المشرف ضمن دورات التدريب الواقعية في الصيدليات.",
   },
   {
     title: "جاهز للتقارير المؤسسية",
-    body: "يوفر لمنسقي البرامج رؤية موثوقة لتقدم الطلاب بدون أن يبدو الموقع كمتجر إلكتروني.",
+    body: "يوفر لمنسقي البرامج رؤية موثوقة لتقدم الطلاب والنشاط الميداني والمؤشرات المجموعة عبر مواقع التدريب.",
   },
   {
     title: "توفير رموز التفعيل للمؤسسات",
@@ -644,25 +668,25 @@ translations.ar.home.workflowSubtitle =
 translations.ar.features.eyebrow = "وحدات المنصة";
 
 translations.ar.screenshots = {
-  eyebrow: "أماكن مخصصة لواجهات التطبيق",
+  eyebrow: "نظرة على واجهات التطبيق",
   title: "شاشات للمهام التي سيديرها فريق التدريب",
   subtitle:
-    "أماكن خفيفة لعرض لقطات التطبيق لاحقا بدون إضافة ملفات كبيرة أو صور وجوه أو محتوى يكشف هوية المرضى.",
+    "تعرض أقسام الواجهة الجوانب التشغيلية التي يستخدمها الطلاب والمشرفون وإدارات الجامعات بدون صور وجوه أو محتوى يكشف هوية المرضى.",
   items: [
     {
-      title: "متابعة الإدارة",
-      caption: "نظرة على الدفعة والجامعة",
-      lines: ["الالتزام بالحضور", "إنجاز الدفعة", "استثناءات المشرفين"],
+      title: "المتابعة الحية",
+      caption: "خريطة الدفعة ونظرة الجامعة",
+      lines: ["مواقع التدريب النشطة", "الالتزام بالحضور", "حالة الخروج"],
     },
     {
       title: "تطبيق الطالب",
       caption: "تسجيل نشاط التدريب",
-      lines: ["حالة تسجيل الحضور", "جمع الوصفات", "ملخص التقدم"],
+      lines: ["تسجيل حضور دون اتصال", "جمع الوصفات", "الخروج التلقائي"],
     },
     {
-      title: "مراجعة المشرف",
-      caption: "مسار اعتماد منظم",
-      lines: ["النشاط المرسل", "قرار المراجعة", "ملاحظات المتابعة"],
+      title: "دراسات المشرفين",
+      caption: "مسار منظم للبيانات الميدانية",
+      lines: ["أسئلة الدراسة", "ملاحظات الطلاب", "مؤشرات مجمعة"],
     },
   ],
 };
@@ -679,7 +703,7 @@ translations.ar.faq = {
     {
       question: "هل يخزن الموقع صور مرضى؟",
       answer:
-        "لا. يتجنب الموقع وأماكن الصور استخدام وجوه المرضى أو الأشخاص، ويركز المحتوى على سجلات التدريب فقط.",
+        "لا. يتجنب الموقع استخدام وجوه المرضى أو الأشخاص، ويركز المحتوى على سجلات التدريب والبيانات التشغيلية التي لا تكشف هوية المرضى.",
     },
     {
       question: "متى تصدر رموز التفعيل؟",
@@ -692,9 +716,9 @@ translations.ar.faq = {
         "نعم. يمكن للجامعات والكليات طلب رموز التفعيل بالكميات من خلال الموزع المحلي المعتمد. يرجى التواصل مع الفريق لمعرفة تفاصيل الانضمام المؤسسي والمعلومات المطلوبة والتوفر.",
     },
     {
-      question: "هل يمكن استضافة الموقع على Cloudflare Pages؟",
+      question: "هل يدعم التطبيق المتابعة على الخريطة وتسجيل الحضور دون اتصال؟",
       answer:
-        "نعم. الموقع مبني كإخراج Vite ثابت وخفيف مع نسخ إعدادات Cloudflare للـ headers والـ redirects إلى مجلد dist.",
+        "نعم. يوضح الموقع دعم المتابعة الحية للطلاب على الخريطة، وتسجيل الحضور دون اتصال، ومسارات الخروج التلقائي للمستخدمين التدريبيين المخولين.",
     },
   ],
 };
@@ -714,14 +738,14 @@ Object.assign(translations.ar.download, {
     date: "18 حزيران 2026",
     sizeLabel: "حجم الملف",
     size: "60.9 MB",
-    linkLabel: "رابط تحميل APK الرسمي",
+    linkLabel: "رابط تحميل APK",
     href: "/download/apk",
     button: "تحميل APK",
-    note: "استخدم رابط التحميل الرسمي وتجنب ملفات APK المرسلة من مصادر غير معروفة.",
+    note: "حمل التطبيق من هذا الموقع وتجنب ملفات APK المرسلة من مصادر غير معروفة.",
   },
   installTitle: "تعليمات التثبيت",
   installSteps: [
-    "حمل ملف APK من الرابط الرسمي الظاهر في هذه الصفحة.",
+    "حمل ملف APK من هذه الصفحة.",
     "افتح الملف بعد اكتمال التحميل على جهاز أندرويد.",
     "إذا طلب النظام ذلك، اسمح بالتثبيت من هذا المصدر الموثوق.",
     "افتح التطبيق وأدخل رمز التفعيل عند الطلب.",

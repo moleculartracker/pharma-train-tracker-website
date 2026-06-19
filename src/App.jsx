@@ -48,6 +48,10 @@ const featureIcons = [
   ClipboardCheck,
   MonitorCheck,
   Languages,
+  Database,
+  Smartphone,
+  Building2,
+  UsersRound,
 ];
 
 const workflowIcons = [CalendarCheck, Pill, ClipboardCheck, Building2];
@@ -498,7 +502,7 @@ function HomePage({ t, setPage }) {
           />
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {t.features.cards.map((card, index) => (
-              <Card key={card.title} icon={featureIcons[index]} title={card.title} body={card.body} />
+              <Card key={card.title} icon={featureIcons[index % featureIcons.length]} title={card.title} body={card.body} />
             ))}
           </div>
         </div>
@@ -532,7 +536,7 @@ function FeaturesPage({ t }) {
       <SectionHeader eyebrow={t.features.eyebrow} title={t.features.title} subtitle={t.features.subtitle} center />
       <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {t.features.cards.map((card, index) => (
-          <Card key={card.title} icon={featureIcons[index]} title={card.title} body={card.body} />
+          <Card key={card.title} icon={featureIcons[index % featureIcons.length]} title={card.title} body={card.body} />
         ))}
       </div>
       <div className="mt-12 rounded-lg bg-navy-900 p-8 text-white">
@@ -547,7 +551,7 @@ function FeaturesPage({ t }) {
           <div className="grid gap-3 sm:grid-cols-3">
             {t.screenshots.items.map((item, index) => {
               const icons = [MonitorCheck, Smartphone, UserCheck];
-              const Icon = icons[index];
+              const Icon = icons[index % icons.length];
               return (
                 <div key={item.title} className="rounded-lg bg-white/8 p-4 ring-1 ring-white/10">
                   <Icon className="h-5 w-5 text-emerald-300" aria-hidden="true" />
