@@ -55,6 +55,7 @@ const featureIcons = [
 ];
 
 const workflowIcons = [CalendarCheck, Pill, ClipboardCheck, Building2];
+const contactFormEndpoint = "https://formspree.io/f/xqeorakd";
 
 function getInitialPage() {
   const hash = window.location.hash.replace("#", "");
@@ -647,62 +648,45 @@ function DownloadPage({ t }) {
   );
 }
 
-function ActivationPage({ t }) {
+function ActivationPage({ t, setPage }) {
   return (
     <PageFrame>
       <SectionHeader title={t.activation.title} subtitle={t.activation.subtitle} />
-      <form className="mt-10 grid gap-4 rounded-lg border border-clinical-200 bg-white p-6 shadow-soft md:grid-cols-2">
-        <h2 className="text-2xl font-black text-navy-900 md:col-span-2">{t.activation.formTitle}</h2>
-        <TextField
-          name="fullName"
-          label={t.activation.fields.fullName}
-          placeholder={t.activation.placeholders.fullName}
-        />
-        <TextField
-          name="email"
-          type="email"
-          label={t.activation.fields.email}
-          placeholder={t.activation.placeholders.email}
-        />
-        <TextField
-          name="phone"
-          type="tel"
-          label={t.activation.fields.phone}
-          placeholder={t.activation.placeholders.phone}
-        />
-        <TextField
-          name="university"
-          label={t.activation.fields.university}
-          placeholder={t.activation.placeholders.university}
-        />
-        <SelectField name="role" label={t.activation.fields.role} options={t.activation.roleOptions} />
-        <TextField name="paymentDate" type="date" label={t.activation.fields.paymentDate} />
-        <TextField
-          name="paymentAmount"
-          label={t.activation.fields.paymentAmount}
-          placeholder={t.activation.placeholders.paymentAmount}
-        />
-        <TextField
-          name="qiSender"
-          label={t.activation.fields.qiSender}
-          placeholder={t.activation.placeholders.qiSender}
-        />
-        <FileField label={t.activation.fields.receipt} buttonText={t.activation.placeholders.receipt} />
-        <TextField
-          name="notes"
-          multiline
-          label={t.activation.fields.notes}
-          placeholder={t.activation.placeholders.notes}
-        />
-        <p className="rounded-lg bg-navy-50 p-4 text-sm font-bold leading-7 text-navy-800 md:col-span-2">
-          {t.activation.notice}
-        </p>
-        <div className="md:col-span-2">
-          <Button type="submit" icon={BadgeCheck}>
-            {t.actions.submit}
-          </Button>
-        </div>
-      </form>
+      <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+        <article className="rounded-lg border border-slate-300 bg-slate-50 p-8 shadow-sm">
+          <IconBadge icon={BadgeCheck} tone="blue" />
+          <p className="mt-5 inline-flex rounded-lg bg-white px-3 py-2 text-sm font-black text-slate-700 ring-1 ring-slate-200">
+            {t.activation.status}
+          </p>
+          <h2 className="mt-5 text-3xl font-black leading-tight text-navy-900">{t.activation.formTitle}</h2>
+          <p className="mt-4 text-lg font-bold leading-8 text-slate-700">{t.activation.notice}</p>
+        </article>
+
+        <article className="rounded-lg border border-emerald-600/25 bg-white p-8 shadow-soft">
+          <IconBadge icon={Building2} tone="green" />
+          <h2 className="mt-5 text-2xl font-black text-navy-900">{t.activation.institutionalTitle}</h2>
+          <p className="mt-4 leading-8 text-slate-600">{t.activation.institutionalBody}</p>
+          <ul className="mt-6 grid gap-3">
+            {t.activation.institutionalRequirements.map((item) => (
+              <li key={item} className="flex gap-3 rounded-lg bg-clinical-50 p-4">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
+                <span className="leading-7 text-slate-700">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-5 rounded-lg bg-navy-50 p-4 text-sm font-bold leading-7 text-navy-800">
+            {t.activation.emailNote}
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Button icon={Mail} onClick={() => setPage("contact")}>
+              {t.activation.contactButton}
+            </Button>
+            <Button variant="secondary" icon={ReceiptText} onClick={() => setPage("payment")}>
+              {t.actions.payment}
+            </Button>
+          </div>
+        </article>
+      </div>
     </PageFrame>
   );
 }
@@ -740,6 +724,35 @@ function PaymentPage({ t }) {
 }
 
 function ContactPage({ t }) {
+  const [status, setStatus] = useState("idle");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setStatus("sending");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(contactFormEndpoint, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <PageFrame>
       <SectionHeader title={t.contact.title} subtitle={t.contact.subtitle} />
@@ -750,8 +763,12 @@ function ContactPage({ t }) {
             return <Card key={card.title} icon={icons[index]} title={card.title} body={card.body} />;
           })}
         </div>
-        <form className="grid gap-4 rounded-lg border border-clinical-200 bg-white p-6 shadow-soft md:grid-cols-2">
+        <form
+          onSubmit={handleSubmit}
+          className="grid gap-4 rounded-lg border border-clinical-200 bg-white p-6 shadow-soft md:grid-cols-2"
+        >
           <h2 className="text-2xl font-black text-navy-900 md:col-span-2">{t.contact.formTitle}</h2>
+          <input type="hidden" name="_subject" value="Pharmacy Training Tracker institutional request" />
           <TextField
             name="name"
             label={t.contact.fields.name}
@@ -764,14 +781,29 @@ function ContactPage({ t }) {
             placeholder={t.contact.placeholders.email}
           />
           <TextField
+            name="institution"
+            label={t.contact.fields.institution}
+            placeholder={t.contact.placeholders.institution}
+          />
+          <TextField
             name="message"
             multiline
             label={t.contact.fields.message}
             placeholder={t.contact.placeholders.message}
           />
+          {status === "success" ? (
+            <p className="rounded-lg bg-emerald-50 p-4 text-sm font-bold leading-7 text-emerald-800 md:col-span-2">
+              {t.contact.success}
+            </p>
+          ) : null}
+          {status === "error" ? (
+            <p className="rounded-lg bg-red-50 p-4 text-sm font-bold leading-7 text-red-800 md:col-span-2">
+              {t.contact.error}
+            </p>
+          ) : null}
           <div className="md:col-span-2">
             <Button type="submit" icon={MessageSquareText}>
-              {t.contact.send}
+              {status === "sending" ? t.contact.sending : t.contact.send}
             </Button>
           </div>
         </form>
@@ -814,7 +846,7 @@ export function App() {
       home: <HomePage t={t} setPage={setCurrentPage} />,
       features: <FeaturesPage t={t} />,
       download: <DownloadPage t={t} />,
-      activation: <ActivationPage t={t} />,
+      activation: <ActivationPage t={t} setPage={setCurrentPage} />,
       payment: <PaymentPage t={t} />,
       contact: <ContactPage t={t} />,
       privacy: <PolicyPage content={t.privacy} />,

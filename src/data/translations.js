@@ -241,8 +241,21 @@ export const translations = {
     activation: {
       title: "Request Activation",
       subtitle:
-        "Submit payment and program details so the team can verify your request and issue an activation code. Institutional batch token requests for universities and colleges are coordinated through our authorized local distributor.",
-      formTitle: "Activation form",
+        "Individual activation requests are currently closed. Activation is available only through institutional batch packages for universities and colleges.",
+      status: "Individual activation inactive",
+      formTitle: "Individual activation is not available at the moment",
+      institutionalTitle: "Institutional batch activation only",
+      institutionalBody:
+        "Universities and colleges can request batch activation token packages through institutional coordination. Requests should be sent from an official university or college email address so the institution, authorized contact, academic year, and expected student numbers can be verified.",
+      institutionalRequirements: [
+        "Requests are accepted only for institutional packages, not individual student purchases.",
+        "The request should come from an official institutional email address.",
+        "Batch packages are issued per institution and academic year and are not transferable between institutions.",
+        "Expected student numbers for the requested stages should be included before pricing and activation are confirmed.",
+      ],
+      emailNote:
+        "For further information, contact us using the institution's official email address and include the college name, department, academic year, requested batch size, and authorized contact person.",
+      contactButton: "Contact for institutional package",
       fields: {
         fullName: "Full name",
         email: "Email",
@@ -267,7 +280,7 @@ export const translations = {
         notes: "Any details the activation team should know",
       },
       notice:
-        "Submitting this form does not activate the app automatically. Activation is completed after payment confirmation. For university or college batch token requests, contact the team before sending payment.",
+        " Individual activation will be available soon.",
     },
     payment: {
       title: "Payment Instructions",
@@ -290,8 +303,8 @@ export const translations = {
       subtitle:
         "For university activation, batch token purchases, supervisor onboarding, or admin monitoring requests, contact the Pharmacy Training Tracker team.",
       cards: [
-        { title: "Email", body: "activation@example.com" },
-        { title: "Phone", body: "+964 000 000 0000" },
+        { title: "Email", body: "moleculartracker@gmail.com" },
+        { title: "Phone", body: "+964 750 822 6910" },
         { title: "Hours", body: "Sunday to Thursday, 9:00 AM - 5:00 PM" },
         {
           title: "Institutional requests",
@@ -302,14 +315,19 @@ export const translations = {
       fields: {
         name: "Name",
         email: "Email",
+        institution: "Institution / college",
         message: "Message",
       },
       placeholders: {
         name: "Your name",
         email: "name@example.com",
+        institution: "Official university or college name",
         message: "Tell us whether your request is for individual activation or an institutional batch token request.",
       },
       send: "Send message",
+      sending: "Sending...",
+      success: "Your message was sent successfully. We will review institutional requests and respond by email.",
+      error: "The message could not be sent. Please try again or email us directly.",
     },
     privacy: {
       title: "Privacy Policy",
@@ -366,7 +384,7 @@ export const translations = {
     footer: {
       product: "Pharmacy Training Tracker",
       note: "Professional Android training management for pharmacy colleges and supervised practical rotations.",
-      cloudflare: "Cloudflare Pages ready",
+      cloudflare: "Pharmacy Training",
     },
   },
   ar: {
@@ -506,8 +524,21 @@ export const translations = {
     activation: {
       title: "طلب التفعيل",
       subtitle:
-        "أرسل تفاصيل الدفع والبرنامج ليتمكن الفريق من التحقق وإصدار رمز التفعيل. يتم تنسيق طلبات رموز التفعيل بالكميات للجامعات والكليات من خلال الموزع المحلي المعتمد.",
-      formTitle: "نموذج التفعيل",
+        "طلبات التفعيل الفردية مغلقة حاليا. التفعيل متاح فقط من خلال حزم مؤسسية للجامعات والكليات.",
+      status: "التفعيل الفردي غير متاح",
+      formTitle: "التفعيل الفردي غير متاح حاليا",
+      institutionalTitle: "التفعيل متاح للحزم المؤسسية فقط",
+      institutionalBody:
+        "يمكن للجامعات والكليات طلب حزم رموز تفعيل بالكميات من خلال التنسيق المؤسسي. يجب إرسال الطلب من بريد إلكتروني رسمي تابع للجامعة أو الكلية حتى يمكن التحقق من المؤسسة والشخص المخول والسنة الدراسية والعدد المتوقع للطلاب.",
+      institutionalRequirements: [
+        "تقبل الطلبات للحزم المؤسسية فقط، وليس للشراء الفردي من الطلاب.",
+        "يجب أن يصل الطلب من بريد إلكتروني رسمي تابع للمؤسسة.",
+        "تصدر الحزم لكل مؤسسة وسنة دراسية ولا يمكن نقلها بين المؤسسات.",
+        "يجب ذكر العدد المتوقع للطلاب والمراحل المطلوبة قبل تأكيد السعر والتفعيل.",
+      ],
+      emailNote:
+        "للمزيد من المعلومات، يرجى التواصل معنا باستخدام البريد الرسمي للمؤسسة مع ذكر اسم الكلية والقسم والسنة الدراسية وحجم الحزمة المطلوبة والشخص المخول بالتواصل.",
+      contactButton: "التواصل بخصوص حزمة مؤسسية",
       fields: {
         fullName: "الاسم الكامل",
         email: "البريد الإلكتروني",
@@ -532,7 +563,7 @@ export const translations = {
         notes: "أي تفاصيل يحتاج فريق التفعيل لمعرفتها",
       },
       notice:
-        "إرسال هذا النموذج لا يفعل التطبيق تلقائيا. يتم التفعيل بعد تأكيد وصول الدفع. لطلبات رموز التفعيل بالكميات للجامعات أو الكليات، يرجى التواصل مع الفريق قبل إرسال الدفع.",
+        "تم تعطيل نموذج التفعيل قصدا لأن التفعيل الفردي غير متاح حاليا.",
     },
     payment: {
       title: "تعليمات الدفع",
@@ -555,8 +586,8 @@ export const translations = {
       subtitle:
         "لتفعيل الجامعات أو شراء رموز التفعيل بالكميات أو انضمام المشرفين أو طلبات متابعة الإدارة، تواصل مع فريق Pharmacy Training Tracker.",
       cards: [
-        { title: "البريد الإلكتروني", body: "activation@example.com" },
-        { title: "الهاتف", body: "+964 000 000 0000" },
+        { title: "البريد الإلكتروني", body: "moleculartracker@gmail.com" },
+        { title: "الهاتف", body: "009647508226910" },
         { title: "أوقات العمل", body: "الأحد إلى الخميس، 9:00 صباحا - 5:00 مساء" },
         {
           title: "الطلبات المؤسسية",
@@ -567,14 +598,19 @@ export const translations = {
       fields: {
         name: "الاسم",
         email: "البريد الإلكتروني",
+        institution: "المؤسسة / الكلية",
         message: "الرسالة",
       },
       placeholders: {
         name: "اسمك",
         email: "name@example.com",
+        institution: "اسم الجامعة أو الكلية الرسمي",
         message: "وضح هل الطلب لتفعيل فردي أم لطلب مؤسسي لرموز تفعيل بالكميات.",
       },
       send: "إرسال الرسالة",
+      sending: "جار الإرسال...",
+      success: "تم إرسال الرسالة بنجاح. سنراجع الطلبات المؤسسية ونرد عبر البريد الإلكتروني.",
+      error: "تعذر إرسال الرسالة. يرجى المحاولة مرة أخرى أو مراسلتنا مباشرة عبر البريد الإلكتروني.",
     },
     privacy: {
       title: "سياسة الخصوصية",
@@ -631,7 +667,7 @@ export const translations = {
     footer: {
       product: "Pharmacy Training Tracker",
       note: "إدارة تدريب أندرويد احترافية لكليات الصيدلة والدورات العملية بإشراف.",
-      cloudflare: "جاهز لـ Cloudflare Pages",
+      cloudflare: "تدريب صيدلاني",
     },
   },
 };
