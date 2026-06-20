@@ -231,11 +231,12 @@ export const translations = {
         "If prompted, allow installation from this trusted source.",
         "Launch the app and enter your activation code when requested.",
       ],
-      requirementsTitle: "Before installing",
+      requirementsTitle: "System requirements",
       requirements: [
-        "Use the APK link provided on this website.",
-        "Keep your activation code ready before first login.",
-        "Install only on the device used for pharmacy training.",
+        "Android 7.0 (Nougat) or higher",
+        "Internet connection for sync and map features",
+        "GPS enabled for location check-in",
+        "Institutional activation code required",
       ],
     },
     activation: {
@@ -514,11 +515,12 @@ export const translations = {
       cardTitle: "حزمة أندرويد",
       status: "إصدار APK موثق",
       body: "حمل تطبيق أندرويد بعد استلام رمز التفعيل من فريق التدريب.",
-      requirementsTitle: "قبل التثبيت",
+      requirementsTitle: "متطلبات النظام",
       requirements: [
-        "استخدم رابط APK الموجود في هذا الموقع.",
-        "احتفظ برمز التفعيل قبل تسجيل الدخول لأول مرة.",
-        "ثبت التطبيق فقط على الجهاز المستخدم للتدريب الصيدلاني.",
+        "Android 7.0 (Nougat) أو أحدث",
+        "اتصال بالإنترنت للمزامنة وميزات الخريطة",
+        "تفعيل GPS لتسجيل الحضور حسب الموقع",
+        "رمز تفعيل مؤسسي مطلوب",
       ],
     },
     activation: {
@@ -679,6 +681,120 @@ Object.assign(translations.ar.hero, {
   queueItems: ["قيد الانتظار", "تمت المراجعة", "بحاجة متابعة"],
 });
 
+Object.assign(translations.en.contact, {
+  pageEyebrow: "Get in touch",
+  pageTitle: "Contact Us",
+  pageSubtitle:
+    "For institutional package inquiries, activation support, or any questions about the Pharmacy Training Tracker platform, reach out using the details below.",
+  warning:
+    "For package requests, please contact us from your official institutional email address. Requests from personal emails will not be processed.",
+  infoCards: [
+    {
+      title: "Email",
+      value: "moleculartracker@gmail.com",
+      body: "For institutional inquiries, please write from your official university or college email address.",
+    },
+    {
+      title: "Phone / WhatsApp",
+      value: "+964 750 822 6910",
+      body: "Available via call or WhatsApp.",
+    },
+    {
+      title: "Location",
+      value: "Iraq",
+      body: "We serve pharmacy colleges and universities across the region.",
+    },
+    {
+      title: "Response time",
+      value: "2-3 business days",
+      body: "We aim to respond to all institutional inquiries within 2-3 business days.",
+    },
+  ],
+  helpTitle: "What can we help you with?",
+  helpItems: [
+    {
+      title: "Institutional package inquiry",
+      body: "Request pricing and package details for your university or college.",
+    },
+    {
+      title: "Activation support",
+      body: "Issues with activation codes, student onboarding, or account setup.",
+    },
+    {
+      title: "Technical questions",
+      body: "Questions about platform features, compatibility, or system requirements.",
+    },
+    {
+      title: "General inquiries",
+      body: "Any other questions about MolecularTracker or the Pharmacy Training Tracker platform.",
+    },
+  ],
+  packageTitle: "Ready to request a package?",
+  packageBody:
+    "Use our structured request form to submit all required institutional information in one step. We will review your request and respond within 2-3 business days.",
+  packageButton: "Submit request form",
+  viewPackages: "View packages",
+  faqHint: "Before reaching out, you may find your answer in our FAQ.",
+  faqLink: "View FAQ",
+});
+
+Object.assign(translations.ar.contact, {
+  pageEyebrow: "تواصل معنا",
+  pageTitle: "اتصل بنا",
+  pageSubtitle:
+    "للاستفسارات حول الباقات المؤسسية أو دعم التفعيل أو أي أسئلة حول منصة Pharmacy Training Tracker، تواصل معنا عبر التفاصيل أدناه.",
+  warning:
+    "لطلبات الباقات، يرجى التواصل من البريد الرسمي للمؤسسة. لن تتم معالجة الطلبات المرسلة من بريد شخصي.",
+  infoCards: [
+    {
+      title: "البريد الإلكتروني",
+      value: "moleculartracker@gmail.com",
+      body: "للاستفسارات المؤسسية، يرجى الكتابة من البريد الرسمي للجامعة أو الكلية.",
+    },
+    {
+      title: "الهاتف / واتساب",
+      value: "+964 750 822 6910",
+      body: "متاح عبر الاتصال أو واتساب.",
+    },
+    {
+      title: "الموقع",
+      value: "العراق",
+      body: "نخدم كليات الصيدلة والجامعات في المنطقة.",
+    },
+    {
+      title: "وقت الاستجابة",
+      value: "2-3 أيام عمل",
+      body: "نسعى للرد على جميع الاستفسارات المؤسسية خلال 2-3 أيام عمل.",
+    },
+  ],
+  helpTitle: "كيف يمكننا مساعدتك؟",
+  helpItems: [
+    {
+      title: "استفسار عن باقة مؤسسية",
+      body: "طلب الأسعار وتفاصيل الباقات لجامعتك أو كليتك.",
+    },
+    {
+      title: "دعم التفعيل",
+      body: "مشكلات رموز التفعيل أو انضمام الطلاب أو إعداد الحسابات.",
+    },
+    {
+      title: "أسئلة تقنية",
+      body: "أسئلة حول مميزات المنصة أو التوافق أو متطلبات النظام.",
+    },
+    {
+      title: "استفسارات عامة",
+      body: "أي أسئلة أخرى حول MolecularTracker أو منصة Pharmacy Training Tracker.",
+    },
+  ],
+  packageTitle: "هل أنت جاهز لطلب باقة؟",
+  packageBody:
+    "استخدم نموذج الطلب المنظم لإرسال جميع معلومات المؤسسة المطلوبة في خطوة واحدة. سنراجع طلبك ونرد خلال 2-3 أيام عمل.",
+  packageButton: "إرسال نموذج الطلب",
+  viewPackages: "عرض الباقات",
+  faqHint: "قبل التواصل، قد تجد إجابتك في الأسئلة الشائعة.",
+  faqLink: "عرض الأسئلة الشائعة",
+});
+
 translations.ar.home.platform = [
   {
     title: "مصمم للحوكمة الأكاديمية",
@@ -786,4 +902,796 @@ Object.assign(translations.ar.download, {
     "إذا طلب النظام ذلك، اسمح بالتثبيت من هذا المصدر الموثوق.",
     "افتح التطبيق وأدخل رمز التفعيل عند الطلب.",
   ],
+});
+
+Object.assign(translations.en.meta, {
+  appName: "MolecularTracker",
+  appShortName: "Pharmacy Training Tracker",
+});
+
+translations.en.nav = [
+  { id: "home", label: "Home" },
+  { id: "features", label: "Platform Features" },
+  { id: "activation", label: "Institutional Packages" },
+  { id: "download", label: "Download APK" },
+  { id: "contact", label: "Contact" },
+  { id: "payment", label: "Payment Instructions" },
+  { id: "privacy", label: "Privacy Policy" },
+  { id: "terms", label: "Terms of Use" },
+];
+
+Object.assign(translations.en.actions, {
+  requestActivation: "Request Package",
+  viewFeatures: "View full feature details",
+});
+
+Object.assign(translations.en.hero, {
+  eyebrow: "Institutional platform",
+  title: "MolecularTracker for Pharmacy Training Management",
+  body: "A professional Android platform for pharmacy colleges and universities to manage attendance, prescription collection, supervisor review, field studies, live map monitoring, and institutional training oversight.",
+  mockupLabels: {
+    dashboard: "Dashboard",
+    students: "Students",
+    active: "Active",
+    records: "Records",
+    pending: "Pending",
+    map: "Live Map View",
+  },
+});
+
+Object.assign(translations.en.home, {
+  trustItems: [
+    "Institutional Access Only",
+    "University & College Deployments",
+    "Arabic & English Interface",
+    "Offline-Capable",
+  ],
+  packagesEyebrow: "Institutional batch packages",
+  packagesTitle: "Available for Universities & Colleges",
+  requestMustIncludeTitle: "Request must include:",
+  requestMustInclude: [
+    "University or college name",
+    "Department / college",
+    "Academic year",
+    "Expected number of students",
+    "Requested stages / cohorts",
+    "Authorized contact person",
+    "Official email and phone number",
+  ],
+  packageNonTransferable:
+    "Batch packages are issued per institution and academic year and are not transferable between institutions.",
+  downloadEyebrow: "Download the app",
+  platformLabel: "Platform",
+});
+
+Object.assign(translations.en.home, {
+  featureSummary: [
+    {
+      title: "Attendance & training records",
+      body: "Track pharmacy-site check-in, checkout, prescription collection, and structured training activity in one supervised record.",
+    },
+    {
+      title: "Supervisor review & field studies",
+      body: "Support review queues, approvals, supervisor-led study forms, and student participation in structured field data collection.",
+    },
+    {
+      title: "Progress & university reporting",
+      body: "Monitor student progress, cohort completion, training activity, and institutional dashboards for academic oversight.",
+    },
+    {
+      title: "Live map monitoring",
+      body: "Give authorized university users a controlled map view of active student training locations and attendance status.",
+    },
+    {
+      title: "Offline check-in & automatic checkout",
+      body: "Allow check-in when connectivity is limited and reduce missed checkout records through configurable automation rules.",
+    },
+    {
+      title: "Bilingual institutional platform",
+      body: "Provide Arabic RTL and English LTR access for students, supervisors, and administrators in university environments.",
+    },
+  ],
+});
+
+Object.assign(translations.en.features, {
+  eyebrow: "Platform features",
+  title: "Designed for Academic Training Oversight",
+  subtitle:
+    "Pharmacy Training Tracker provides a comprehensive suite of tools for universities, colleges, supervisors, and administrators to manage every aspect of supervised pharmacy training.",
+});
+
+Object.assign(translations.en.download, {
+  title: "Download Pharmacy Training Tracker",
+  pageEyebrow: "Android application",
+  pageTitle: "Download Pharmacy Training Tracker",
+  pageSubtitle:
+    "The official APK for the Pharmacy Training Tracker platform. Download only from moleculartracker.com. An activation code issued by your institution is required before the app can be used.",
+  androidApplication: "Android Application",
+  platform: "Android",
+  platformLabel: "Platform",
+  cardTitle: "Pharmacy Training Tracker",
+  cardSubtitle: "Android APK - moleculartracker.com",
+  logoAlt: "Animated Pharmacy Training Tracker app logo",
+  installTitle: "How to install",
+  installStepsDetailed: [
+    {
+      title: "Download the APK",
+      body: "Tap the download button below to get the latest APK file directly from moleculartracker.com.",
+    },
+    {
+      title: "Allow unknown sources",
+      body: "On your Android device, go to Settings -> Security and enable installation from unknown sources for your browser or file manager.",
+    },
+    {
+      title: "Install the app",
+      body: "Open the downloaded APK file and follow the on-screen prompts to complete installation.",
+    },
+    {
+      title: "Enter your activation code",
+      body: "Launch the app and enter the activation code provided by your university or college administrator.",
+    },
+  ],
+  activationTitle: "Activation code required",
+  activationBody:
+    "The app requires an activation code before it can be used. Activation codes are issued only to students, supervisors, and administrators enrolled in an institutional package. Individual activation is not currently available.",
+  activationLink: "Request institutional package",
+  officialTitle: "Official source only",
+  officialBody:
+    "Always download the APK directly from moleculartracker.com. Do not install APK files shared via messaging apps, third-party stores, or unofficial links.",
+});
+
+Object.assign(translations.en.footer, {
+  product: "MolecularTracker",
+  note: "Digital tools for supervised pharmacy training management in universities and colleges.",
+  contactTitle: "Contact MolecularTracker",
+  contactNote:
+    "For institutional packages, please contact us from an official university or college email address.",
+  platformTitle: "Platform",
+  legalTitle: "Legal & Contact",
+  faq: "FAQ",
+  email: "moleculartracker@gmail.com",
+  phone: "+964 750 822 6910",
+  copyright: "© 2026 MolecularTracker. All rights reserved.",
+  domain: "moleculartracker.com",
+});
+
+Object.assign(translations.ar.meta, {
+  appName: "MolecularTracker",
+  appShortName: "متتبع التدريب الصيدلاني",
+});
+
+translations.ar.nav = [
+  { id: "home", label: "الرئيسية" },
+  { id: "features", label: "مميزات المنصة" },
+  { id: "activation", label: "الباقات المؤسسية" },
+  { id: "download", label: "تحميل APK" },
+  { id: "contact", label: "اتصل بنا" },
+  { id: "payment", label: "تعليمات الدفع" },
+  { id: "privacy", label: "سياسة الخصوصية" },
+  { id: "terms", label: "شروط الاستخدام" },
+];
+
+Object.assign(translations.ar.actions, {
+  requestActivation: "طلب باقة",
+  viewFeatures: "عرض تفاصيل المميزات",
+});
+
+Object.assign(translations.ar.hero, {
+  eyebrow: "منصة مؤسسية",
+  title: "MolecularTracker لإدارة التدريب الصيدلاني",
+  body:
+    "منصة أندرويد احترافية لكليات الصيدلة والجامعات لإدارة الحضور، وجمع الوصفات، ومراجعة المشرفين، والدراسات الميدانية، والمتابعة الحية على الخريطة، والإشراف المؤسسي على التدريب.",
+  mockupLabels: {
+    dashboard: "لوحة التحكم",
+    students: "الطلاب",
+    active: "نشط",
+    records: "السجلات",
+    pending: "قيد الانتظار",
+    map: "عرض الخريطة الحية",
+  },
+});
+
+Object.assign(translations.ar.home, {
+  trustItems: [
+    "وصول مؤسسي فقط",
+    "نشر للجامعات والكليات",
+    "واجهة عربية وإنجليزية",
+    "يدعم العمل دون اتصال",
+  ],
+  packagesEyebrow: "باقات التفعيل المؤسسية",
+  packagesTitle: "متاح للجامعات والكليات",
+  requestMustIncludeTitle: "يجب أن يتضمن الطلب:",
+  requestMustInclude: [
+    "اسم الجامعة أو الكلية",
+    "القسم / الكلية",
+    "السنة الدراسية",
+    "العدد المتوقع للطلاب",
+    "المراحل / الدفعات المطلوبة",
+    "الشخص المخول بالتواصل",
+    "البريد الرسمي ورقم الهاتف",
+  ],
+  packageNonTransferable:
+    "تصدر الباقات لكل مؤسسة وسنة دراسية ولا يمكن نقلها بين المؤسسات.",
+  downloadEyebrow: "تحميل التطبيق",
+  platformLabel: "النظام",
+});
+
+Object.assign(translations.ar.home, {
+  featureSummary: [
+    {
+      title: "الحضور وسجلات التدريب",
+      body: "تتبع تسجيل الحضور والخروج في مواقع التدريب وجمع الوصفات وأنشطة التدريب المنظمة ضمن سجل واحد بإشراف.",
+    },
+    {
+      title: "مراجعة المشرف والدراسات الميدانية",
+      body: "دعم قوائم المراجعة والاعتماد ونماذج الدراسات التي ينشئها المشرفون وجمع البيانات الميدانية بمشاركة الطلاب.",
+    },
+    {
+      title: "تقدم الطلاب وتقارير الجامعة",
+      body: "متابعة تقدم الطلاب وإكمال الدفعات وأنشطة التدريب ولوحات المؤسسة لأغراض الإشراف الأكاديمي.",
+    },
+    {
+      title: "المتابعة الحية على الخريطة",
+      body: "توفير عرض خريطة مضبوط للمستخدمين المخولين في الجامعة لمواقع تدريب الطلاب النشطة وحالة الحضور.",
+    },
+    {
+      title: "حضور دون اتصال وخروج تلقائي",
+      body: "السماح بتسجيل الحضور عند ضعف الاتصال وتقليل سجلات الخروج المفقودة من خلال قواعد أتمتة قابلة للضبط.",
+    },
+    {
+      title: "منصة مؤسسية ثنائية اللغة",
+      body: "توفير واجهة عربية RTL وإنجليزية LTR للطلاب والمشرفين والإداريين في البيئات الجامعية.",
+    },
+  ],
+});
+
+Object.assign(translations.ar.footer, {
+  product: "MolecularTracker",
+  note: "أدوات رقمية لإدارة التدريب الصيدلاني العملي بإشراف الجامعات والكليات.",
+  contactTitle: "اتصل بـ MolecularTracker",
+  contactNote:
+    "للباقات المؤسسية، يرجى التواصل معنا من بريد رسمي تابع للجامعة أو الكلية.",
+  platformTitle: "المنصة",
+  legalTitle: "القانوني والتواصل",
+  faq: "الأسئلة الشائعة",
+  email: "moleculartracker@gmail.com",
+  phone: "+964 750 822 6910",
+  copyright: "© 2026 MolecularTracker. جميع الحقوق محفوظة.",
+  domain: "moleculartracker.com",
+});
+
+Object.assign(translations.ar.download, {
+  title: "تحميل Pharmacy Training Tracker",
+  pageEyebrow: "تطبيق أندرويد",
+  pageTitle: "تحميل Pharmacy Training Tracker",
+  pageSubtitle:
+    "ملف APK الرسمي لمنصة Pharmacy Training Tracker. يرجى التحميل فقط من moleculartracker.com. يلزم رمز تفعيل صادر من مؤسستك قبل استخدام التطبيق.",
+  androidApplication: "تطبيق أندرويد",
+  platform: "أندرويد",
+  platformLabel: "النظام",
+  cardTitle: "Pharmacy Training Tracker",
+  cardSubtitle: "Android APK - moleculartracker.com",
+  logoAlt: "شعار متحرك لتطبيق Pharmacy Training Tracker",
+  installTitle: "طريقة التثبيت",
+  installStepsDetailed: [
+    {
+      title: "تحميل ملف APK",
+      body: "اضغط زر التحميل للحصول على آخر ملف APK مباشرة من moleculartracker.com.",
+    },
+    {
+      title: "السماح بالمصادر غير المعروفة",
+      body: "على جهاز أندرويد، افتح الإعدادات ثم الأمان واسمح بالتثبيت من المصدر المستخدم للتحميل أو مدير الملفات.",
+    },
+    {
+      title: "تثبيت التطبيق",
+      body: "افتح ملف APK الذي تم تحميله واتبع تعليمات النظام لإكمال التثبيت.",
+    },
+    {
+      title: "إدخال رمز التفعيل",
+      body: "افتح التطبيق وأدخل رمز التفعيل الذي وفرته الجامعة أو الكلية.",
+    },
+  ],
+  activationTitle: "رمز التفعيل مطلوب",
+  activationBody:
+    "يتطلب التطبيق رمز تفعيل قبل الاستخدام. تصدر رموز التفعيل فقط للطلاب والمشرفين والإداريين ضمن باقة مؤسسية. التفعيل الفردي غير متاح حاليا.",
+  activationLink: "طلب باقة مؤسسية",
+  officialTitle: "مصدر رسمي فقط",
+  officialBody:
+    "قم دائما بتحميل APK مباشرة من moleculartracker.com. لا تثبت ملفات APK مرسلة عبر تطبيقات المراسلة أو المتاجر غير الرسمية أو الروابط غير المعتمدة.",
+});
+
+const enFeatureDetails = [
+  {
+    label: "Attendance",
+    title: "Student Attendance Tracking",
+    body:
+      "Track student check-in and check-out at pharmacy training sites with precise timestamped records. Each attendance event is logged against the student profile, training site, and academic cohort, providing a complete audit trail for supervisors and administrators.",
+    bullets: [
+      "Timestamped check-in and check-out records",
+      "Attendance history per student and training site",
+      "Supports cohort-level attendance review",
+      "Designed for supervised pharmacy rotations",
+    ],
+  },
+  {
+    label: "Training Records",
+    title: "Prescription Collection Records",
+    body:
+      "Log training activities and prescription collection during supervised pharmacy sessions. Students record each prescription encounter as part of their structured training log, enabling supervisors to review activity volume and training quality.",
+    bullets: [
+      "Structured training activity logging",
+      "Prescription encounter records per session",
+      "Supervisor-accessible training logs",
+      "Supports academic training documentation requirements",
+    ],
+  },
+  {
+    label: "Monitoring",
+    title: "Student Progress Monitoring",
+    body:
+      "Monitor individual student progress throughout the academic training period with detailed reports. Administrators and supervisors can view cumulative training hours, activity counts, and completion status for each student across all assigned training sites.",
+    bullets: [
+      "Individual student progress dashboards",
+      "Cumulative training hours and activity counts",
+      "Completion status per training stage",
+      "Cohort-level progress comparison",
+    ],
+  },
+  {
+    label: "Supervision",
+    title: "Supervisor Review & Approval",
+    body:
+      "Structured supervisor workflows for reviewing and approving student training records. Supervisors receive pending review queues, can annotate records, approve or flag submissions, and maintain a documented review history for institutional compliance.",
+    bullets: [
+      "Pending review queue for supervisors",
+      "Approve, annotate, or flag student records",
+      "Documented review history per student",
+      "Supports institutional compliance requirements",
+    ],
+  },
+  {
+    label: "Field Studies",
+    title: "Supervisor-Led Field Studies",
+    body:
+      "Supervisors can design structured studies and collect field data through student participation. This feature enables academic departments to conduct structured observational research in community pharmacy settings using students as data collection participants under formal supervision.",
+    bullets: [
+      "Supervisors design structured data collection forms",
+      "Students participate as field data collectors",
+      "Structured, non-patient-identifying data collection",
+      "Supports academic research and departmental studies",
+    ],
+  },
+  {
+    label: "Data & Analytics",
+    title: "Aggregated Community Indicators",
+    body:
+      "Generate aggregated, non-patient-identifying indicators from student-collected field data. These indicators may help describe community pharmacy behavior patterns, population-level medicine use observations, and service trends without storing or displaying any patient-identifying information.",
+    bullets: [
+      "Aggregated, non-patient-identifying indicators only",
+      "Population-level pharmacy behavior patterns",
+      "Useful for academic and departmental analysis",
+      "No patient faces, names, or identifying records stored",
+    ],
+  },
+  {
+    label: "Live Monitoring",
+    title: "Live Map Monitoring",
+    body:
+      "Authorized university and admin users can view live student locations on an interactive map. This feature is restricted to approved institutional administrators and is designed for academic training oversight, not for general tracking. Access is controlled by institutional authorization.",
+    bullets: [
+      "Live student location view for authorized admins",
+      "Restricted to approved institutional users only",
+      "Designed for academic training oversight",
+      "Access controlled by institutional authorization",
+    ],
+  },
+  {
+    label: "Connectivity",
+    title: "Offline Check-In Support",
+    body:
+      "Students can check in even when internet connectivity is limited or unavailable. The application supports offline check-in to accommodate pharmacy training sites with weak or intermittent connectivity, syncing records when the connection is restored.",
+    bullets: [
+      "Check-in works without active internet connection",
+      "Records sync automatically when connectivity resumes",
+      "Suitable for sites with weak or intermittent connectivity",
+      "No data loss during offline periods",
+    ],
+  },
+  {
+    label: "Automation",
+    title: "Automatic Checkout Rules",
+    body:
+      "Configurable rules to automatically handle checkout and reduce missed checkout records. Institutions can define automatic checkout triggers based on time thresholds or shift end times, ensuring training records remain accurate even when students forget to manually check out.",
+    bullets: [
+      "Configurable automatic checkout time rules",
+      "Reduces missed or incomplete checkout records",
+      "Customizable per institution or training stage",
+      "Maintains record accuracy without manual intervention",
+    ],
+  },
+  {
+    label: "Administration",
+    title: "Admin & University Dashboard",
+    body:
+      "Institutional dashboard for cohort-level monitoring, oversight, and academic reporting. University administrators can view aggregated training data across all cohorts, monitor compliance with training requirements, and generate reports for academic accreditation and quality assurance purposes.",
+    bullets: [
+      "Cohort-level training overview and monitoring",
+      "Compliance tracking against training requirements",
+      "Exportable reports for accreditation purposes",
+      "Multi-cohort and multi-site visibility",
+    ],
+  },
+  {
+    label: "Accessibility",
+    title: "Arabic & English Support",
+    body:
+      "Full bilingual interface for students, supervisors, and administrators in Arabic and English. The application supports right-to-left (RTL) layout for Arabic and left-to-right (LTR) for English, ensuring a native experience for all users regardless of language preference.",
+    bullets: [
+      "Full Arabic RTL and English LTR interface",
+      "Language preference stored per user account",
+      "All notifications and records in selected language",
+      "Suitable for mixed Arabic/English academic environments",
+    ],
+  },
+];
+
+Object.assign(translations.en.features, {
+  pageEyebrow: "Pharmacy Training Tracker",
+  pageTitle: "Platform Features",
+  pageSubtitle:
+    "A comprehensive overview of all features available in Pharmacy Training Tracker — designed for pharmacy colleges, universities, training supervisors, and academic administrators.",
+  safetyNotice:
+    "This platform is for training management only. No patient-identifying information, patient faces, or diagnostic data is stored or displayed.",
+  details: enFeatureDetails,
+  cards: enFeatureDetails.map(({ title, body }) => ({ title, body })),
+  assurances: [
+    { title: "Android", body: "Platform" },
+    { title: "Institutional Only", body: "Access Model" },
+    { title: "No Patient Data", body: "Privacy Commitment" },
+  ],
+  ctaTitle: "Ready to deploy at your institution?",
+  ctaSubtitle:
+    "Pharmacy Training Tracker is available exclusively through institutional batch activation packages for universities and colleges.",
+});
+
+const arFeatureDetails = [
+  {
+    label: "الحضور",
+    title: "تتبع حضور الطلاب",
+    body:
+      "تتبع تسجيل دخول وخروج الطلاب في مواقع التدريب الصيدلاني مع سجلات زمنية واضحة مرتبطة بملف الطالب وموقع التدريب والدفعة الأكاديمية.",
+    bullets: [
+      "سجلات دخول وخروج بتوقيت واضح",
+      "تاريخ الحضور حسب الطالب وموقع التدريب",
+      "يدعم مراجعة الحضور على مستوى الدفعة",
+      "مصمم للدورات الصيدلانية بإشراف أكاديمي",
+    ],
+  },
+  {
+    label: "سجلات التدريب",
+    title: "سجلات جمع الوصفات",
+    body:
+      "تسجيل أنشطة التدريب وجمع الوصفات أثناء جلسات التدريب الصيدلاني بإشراف، ضمن سجل تدريبي منظم يمكن للمشرف مراجعته.",
+    bullets: [
+      "تسجيل منظم لأنشطة التدريب",
+      "سجلات الوصفات لكل جلسة تدريب",
+      "سجلات متاحة للمشرفين المخولين",
+      "يدعم متطلبات توثيق التدريب الأكاديمي",
+    ],
+  },
+  {
+    label: "المتابعة",
+    title: "متابعة تقدم الطلاب",
+    body:
+      "متابعة تقدم كل طالب خلال فترة التدريب الأكاديمي من خلال تقارير تعرض الساعات والأنشطة وحالة الإكمال في مواقع التدريب المختلفة.",
+    bullets: [
+      "لوحات تقدم لكل طالب",
+      "ساعات تدريب وأنشطة تراكمية",
+      "حالة الإكمال حسب المرحلة التدريبية",
+      "مقارنة تقدم الطلاب على مستوى الدفعة",
+    ],
+  },
+  {
+    label: "الإشراف",
+    title: "مراجعة واعتماد المشرف",
+    body:
+      "مسارات عمل منظمة للمشرفين لمراجعة واعتماد سجلات تدريب الطلاب مع إمكانية توثيق المراجعة والملاحظات والقرارات.",
+    bullets: [
+      "قائمة مراجعة للطلبات المعلقة",
+      "اعتماد أو ملاحظة أو تعليم السجلات",
+      "تاريخ مراجعة موثق لكل طالب",
+      "يدعم متطلبات الالتزام المؤسسي",
+    ],
+  },
+  {
+    label: "الدراسات الميدانية",
+    title: "دراسات ميدانية بإشراف المشرفين",
+    body:
+      "يمكن للمشرفين إنشاء نماذج دراسات منظمة وجمع بيانات ميدانية من خلال مشاركة الطلاب ضمن إشراف أكاديمي رسمي.",
+    bullets: [
+      "تصميم نماذج جمع بيانات منظمة",
+      "مشاركة الطلاب في جمع البيانات الميدانية",
+      "جمع بيانات لا تكشف هوية المرضى",
+      "يدعم البحث الأكاديمي والدراسات القسمية",
+    ],
+  },
+  {
+    label: "البيانات والتحليل",
+    title: "مؤشرات مجتمعية مجمعة",
+    body:
+      "إنشاء مؤشرات مجمعة لا تكشف هوية المرضى من البيانات الميدانية التي يجمعها الطلاب، لدعم التحليل الأكاديمي وسلوك الصيدليات المجتمعية.",
+    bullets: [
+      "مؤشرات مجمعة لا تكشف الهوية",
+      "أنماط سلوك صيدلاني على مستوى المجتمع",
+      "مفيد للتحليل الأكاديمي والقسمي",
+      "لا يتم تخزين وجوه أو أسماء أو بيانات تعريف المرضى",
+    ],
+  },
+  {
+    label: "المتابعة الحية",
+    title: "المتابعة الحية على الخريطة",
+    body:
+      "يمكن للمستخدمين المخولين في الجامعة أو الإدارة عرض مواقع الطلاب النشطة على خريطة تفاعلية لأغراض الإشراف الأكاديمي فقط.",
+    bullets: [
+      "عرض مواقع الطلاب للمخولين فقط",
+      "مقيد بالمستخدمين المؤسسيين المعتمدين",
+      "مصمم للإشراف الأكاديمي على التدريب",
+      "الوصول مضبوط حسب التخويل المؤسسي",
+    ],
+  },
+  {
+    label: "الاتصال",
+    title: "دعم تسجيل الحضور دون اتصال",
+    body:
+      "يمكن للطلاب تسجيل الحضور عند ضعف الإنترنت أو عدم توفره، مع مزامنة السجلات تلقائيا عند عودة الاتصال.",
+    bullets: [
+      "تسجيل الحضور يعمل دون اتصال فعال",
+      "مزامنة السجلات عند عودة الاتصال",
+      "مناسب للمواقع ذات الاتصال الضعيف",
+      "تقليل فقدان البيانات أثناء الانقطاع",
+    ],
+  },
+  {
+    label: "الأتمتة",
+    title: "قواعد الخروج التلقائي",
+    body:
+      "قواعد قابلة للضبط للتعامل تلقائيا مع الخروج وتقليل سجلات الخروج الناقصة حسب الوقت أو نهاية فترة التدريب.",
+    bullets: [
+      "قواعد خروج تلقائي قابلة للضبط",
+      "تقليل سجلات الخروج المفقودة",
+      "إعدادات حسب المؤسسة أو المرحلة",
+      "تحسين دقة السجلات دون تدخل يدوي",
+    ],
+  },
+  {
+    label: "الإدارة",
+    title: "لوحة إدارة الجامعة",
+    body:
+      "لوحة مؤسسية لمراقبة الدفعات والتقارير الأكاديمية والالتزام بمتطلبات التدريب عبر مواقع ودفعات متعددة.",
+    bullets: [
+      "متابعة التدريب على مستوى الدفعة",
+      "تتبع الالتزام بمتطلبات التدريب",
+      "تقارير قابلة للاستخدام لأغراض الاعتماد",
+      "رؤية متعددة الدفعات والمواقع",
+    ],
+  },
+  {
+    label: "إتاحة الاستخدام",
+    title: "دعم العربية والإنجليزية",
+    body:
+      "واجهة ثنائية اللغة للطلاب والمشرفين والإداريين بالعربية والإنجليزية مع دعم RTL للعربية وLTR للإنجليزية.",
+    bullets: [
+      "واجهة عربية RTL وإنجليزية LTR",
+      "حفظ تفضيل اللغة لكل مستخدم",
+      "الإشعارات والسجلات باللغة المختارة",
+      "مناسب للبيئات الأكاديمية متعددة اللغة",
+    ],
+  },
+];
+
+Object.assign(translations.ar.features, {
+  pageEyebrow: "Pharmacy Training Tracker",
+  pageTitle: "مميزات المنصة",
+  pageSubtitle:
+    "نظرة شاملة على مميزات Pharmacy Training Tracker المصممة لكليات الصيدلة والجامعات والمشرفين وإدارات التدريب الأكاديمي.",
+  safetyNotice:
+    "هذه المنصة مخصصة لإدارة التدريب فقط. لا يتم تخزين أو عرض معلومات تكشف هوية المرضى أو صور وجوه المرضى أو بيانات تشخيصية.",
+  details: arFeatureDetails,
+  cards: arFeatureDetails.map(({ title, body }) => ({ title, body })),
+  assurances: [
+    { title: "أندرويد", body: "النظام" },
+    { title: "مؤسسي فقط", body: "نموذج الوصول" },
+    { title: "لا بيانات مرضى", body: "التزام الخصوصية" },
+  ],
+  ctaTitle: "هل مؤسستك جاهزة للنشر؟",
+  ctaSubtitle:
+    "يتوفر Pharmacy Training Tracker حصرا من خلال باقات تفعيل مؤسسية للجامعات والكليات.",
+});
+
+Object.assign(translations.en.activation, {
+  pageEyebrow: "Institutional access only",
+  pageTitle: "Institutional Batch Packages",
+  pageSubtitle:
+    "Pharmacy Training Tracker is available exclusively through institutional batch activation packages. Packages are issued per institution and academic year and must be requested from an official university or college email address.",
+  warning:
+    "Individual activation is currently inactive. Activation is available through institutional batch packages only.",
+  tiersEyebrow: "Package tiers",
+  tiersTitle: "Choose the right size for your institution",
+  tiers: [
+    {
+      title: "Small Cohort",
+      capacity: "Up to 50 students",
+      body: "Suitable for a single training stage or small department cohort.",
+    },
+    {
+      title: "Medium Cohort",
+      capacity: "Up to 150 students",
+      body: "Covers multiple training stages or a full academic year cohort.",
+    },
+    {
+      title: "Large Cohort",
+      capacity: "Up to 300 students",
+      body: "Designed for large colleges managing multiple departments and supervisors.",
+    },
+    {
+      title: "University-Wide",
+      capacity: "Custom capacity",
+      body: "Full university deployment across multiple colleges and academic years. Contact us for a custom quote.",
+    },
+  ],
+  pricingNote:
+    "Pricing is determined based on institution size, number of students, and academic year. Contact us to receive a formal quotation.",
+  includedEyebrow: "What's included",
+  includedTitle: "Every package includes",
+  includedBody:
+    "All institutional packages provide full access to the Pharmacy Training Tracker platform for the duration of one academic year.",
+  includedList: [
+    "Batch activation codes for all enrolled students",
+    "Supervisor and administrator accounts",
+    "Full access to all platform features",
+    "Attendance, prescription, and field study modules",
+    "Live map monitoring for authorized users",
+    "Admin and university dashboard access",
+    "Arabic and English interface support",
+    "Valid for one academic year per package",
+  ],
+  rules: [
+    {
+      title: "Per academic year",
+      body: "Each package is valid for one academic year and must be renewed for the following year. Unused activation codes do not carry over.",
+    },
+    {
+      title: "Non-transferable",
+      body: "Packages are issued per institution and are not transferable between institutions, departments, or academic years.",
+    },
+    {
+      title: "Official request required",
+      body: "Requests must be submitted from an official university or college email address by an authorized representative.",
+    },
+    {
+      title: "Activation after payment",
+      body: "Activation codes are issued only after payment confirmation. See the Activation Policy page for full details.",
+    },
+  ],
+  requestEyebrow: "How to request",
+  requestTitle: "Request an institutional package",
+  requestBody:
+    "Send your request to moleculartracker@gmail.com from an official institutional email address. Your request must include the following information:",
+  requiredTitle: "Required information",
+  requiredInfo: [
+    "University or college name",
+    "Department / college",
+    "Academic year",
+    "Expected number of students",
+    "Requested stages / cohorts",
+    "Authorized contact person name",
+    "Official institutional email address",
+    "Phone number",
+  ],
+  personalEmailWarning:
+    "Requests submitted from personal email addresses (Gmail, Hotmail, etc.) will not be processed.",
+  formCtaTitle: "Submit a formal request",
+  formCtaBody:
+    "Use our structured request form to submit all required information in one step. We will respond within 2-3 business days.",
+  formCtaButton: "Go to request form",
+  directTitle: "Or contact us directly",
+  officialEmailReminder:
+    "Please contact us from your official institutional email address.",
+  paymentPolicyText:
+    "Activation codes are issued only after payment is confirmed. See the Activation Policy for full payment and issuance terms.",
+  paymentPolicyLink: "Activation Policy",
+});
+
+Object.assign(translations.ar.activation, {
+  pageEyebrow: "وصول مؤسسي فقط",
+  pageTitle: "باقات التفعيل المؤسسية",
+  pageSubtitle:
+    "يتوفر Pharmacy Training Tracker حصرا من خلال باقات تفعيل مؤسسية. تصدر الباقات لكل مؤسسة وسنة دراسية ويجب طلبها من بريد رسمي تابع للجامعة أو الكلية.",
+  warning:
+    "التفعيل الفردي غير متاح حاليا. التفعيل متاح من خلال الباقات المؤسسية فقط.",
+  tiersEyebrow: "فئات الباقات",
+  tiersTitle: "اختر الحجم المناسب لمؤسستك",
+  tiers: [
+    {
+      title: "دفعة صغيرة",
+      capacity: "حتى 50 طالبا",
+      body: "مناسبة لمرحلة تدريب واحدة أو دفعة صغيرة في القسم.",
+    },
+    {
+      title: "دفعة متوسطة",
+      capacity: "حتى 150 طالبا",
+      body: "تغطي عدة مراحل تدريبية أو دفعة سنة دراسية كاملة.",
+    },
+    {
+      title: "دفعة كبيرة",
+      capacity: "حتى 300 طالب",
+      body: "مصممة للكليات الكبيرة التي تدير عدة أقسام ومشرفين.",
+    },
+    {
+      title: "نطاق الجامعة",
+      capacity: "سعة مخصصة",
+      body: "نشر على مستوى الجامعة عبر عدة كليات وسنوات دراسية. تواصل معنا للحصول على عرض مخصص.",
+    },
+  ],
+  pricingNote:
+    "يحدد السعر حسب حجم المؤسسة وعدد الطلاب والسنة الدراسية. تواصل معنا للحصول على عرض رسمي.",
+  includedEyebrow: "ما الذي تتضمنه الباقة",
+  includedTitle: "كل باقة تتضمن",
+  includedBody:
+    "توفر جميع الباقات المؤسسية وصولا كاملا إلى منصة Pharmacy Training Tracker لمدة سنة دراسية واحدة.",
+  includedList: [
+    "رموز تفعيل جماعية لجميع الطلاب المشمولين",
+    "حسابات للمشرفين والإداريين",
+    "وصول كامل إلى جميع مميزات المنصة",
+    "وحدات الحضور والوصفات والدراسات الميدانية",
+    "متابعة الخريطة الحية للمستخدمين المخولين",
+    "لوحة إدارة الجامعة والمؤسسة",
+    "دعم واجهة عربية وإنجليزية",
+    "صالحة لسنة دراسية واحدة لكل باقة",
+  ],
+  rules: [
+    {
+      title: "لكل سنة دراسية",
+      body: "كل باقة صالحة لسنة دراسية واحدة ويجب تجديدها للسنة التالية. لا تنتقل رموز التفعيل غير المستخدمة.",
+    },
+    {
+      title: "غير قابلة للنقل",
+      body: "تصدر الباقات لكل مؤسسة ولا يمكن نقلها بين المؤسسات أو الأقسام أو السنوات الدراسية.",
+    },
+    {
+      title: "طلب رسمي مطلوب",
+      body: "يجب إرسال الطلب من بريد رسمي تابع للجامعة أو الكلية بواسطة ممثل مخول.",
+    },
+    {
+      title: "التفعيل بعد الدفع",
+      body: "تصدر رموز التفعيل فقط بعد تأكيد الدفع. راجع سياسة التفعيل لمعرفة التفاصيل.",
+    },
+  ],
+  requestEyebrow: "طريقة الطلب",
+  requestTitle: "طلب باقة مؤسسية",
+  requestBody:
+    "أرسل طلبك إلى moleculartracker@gmail.com من بريد مؤسسي رسمي. يجب أن يتضمن الطلب المعلومات التالية:",
+  requiredTitle: "المعلومات المطلوبة",
+  requiredInfo: [
+    "اسم الجامعة أو الكلية",
+    "القسم / الكلية",
+    "السنة الدراسية",
+    "العدد المتوقع للطلاب",
+    "المراحل / الدفعات المطلوبة",
+    "اسم الشخص المخول بالتواصل",
+    "البريد المؤسسي الرسمي",
+    "رقم الهاتف",
+  ],
+  personalEmailWarning:
+    "لن تتم معالجة الطلبات المرسلة من بريد شخصي مثل Gmail أو Hotmail.",
+  formCtaTitle: "إرسال طلب رسمي",
+  formCtaBody:
+    "استخدم نموذج الطلب المنظم لإرسال جميع المعلومات المطلوبة في خطوة واحدة. سنرد خلال 2-3 أيام عمل.",
+  formCtaButton: "الانتقال إلى نموذج الطلب",
+  directTitle: "أو تواصل معنا مباشرة",
+  officialEmailReminder:
+    "يرجى التواصل معنا من البريد الرسمي الخاص بالمؤسسة.",
+  paymentPolicyText:
+    "تصدر رموز التفعيل فقط بعد تأكيد الدفع. راجع سياسة التفعيل لمعرفة شروط الدفع والإصدار.",
+  paymentPolicyLink: "سياسة التفعيل",
 });

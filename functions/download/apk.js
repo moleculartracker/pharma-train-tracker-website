@@ -1,6 +1,6 @@
-const APK_FILENAME = "pharmacy_training_tracker.apk";
+const APK_FILENAME = "pharmacy_training_tracker_v1.0.0.apk";
 const DEFAULT_PUBLIC_APK_URL =
-  "https://github.com/moleculartracker/pharma-train-tracker-website/releases/download/1/pharmacy_training_tracker.apk";
+  "https://github.com/moleculartracker/pharma-train-tracker-website/releases/download/1/pharmacy_training_tracker_v1.0.0.apk";
 const DEFAULT_GITHUB_OWNER = "moleculartracker";
 const DEFAULT_GITHUB_REPO = "pharma-train-tracker-website";
 const DEFAULT_GITHUB_RELEASE_TAG = "1";
