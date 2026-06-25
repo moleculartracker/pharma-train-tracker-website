@@ -969,8 +969,8 @@ Object.assign(translations.en.home, {
 Object.assign(translations.en.home, {
   featureSummary: [
     {
-      title: "Attendance & prescription records",
-      body: "Track pharmacy-site check-in and structured prescription activity, with the same stored FDA drug lists available in the Android and web app for dosage form, strength, and route details.",
+      title: "Attendance & training records",
+      body: "Track pharmacy-site check-in, checkout, prescription collection, and structured training activity in one supervised record.",
     },
     {
       title: "Supervisor review & field studies",
@@ -1219,12 +1219,12 @@ const enFeatureDetails = [
     label: "Training Records",
     title: "Prescription Collection Records",
     body:
-      "Log prescription collection during supervised pharmacy sessions with structured medicine details. The Android app and web app should use the same stored FDA drug lists to support medicine selection, dosage form, strength, route, quantity, and prescription context without storing patient-identifying information.",
+      "Log training activities and prescription collection during supervised pharmacy sessions. Students record each prescription encounter as part of their structured training log, enabling supervisors to review activity volume and training quality.",
     bullets: [
-      "FDA drug lists stored inside Android and web app",
-      "Dosage form, strength, route, and quantity details",
-      "Prescription encounter records per supervised session",
-      "Non-patient-identifying records for academic review",
+      "Structured training activity logging",
+      "Prescription encounter records per session",
+      "Supervisor-accessible training logs",
+      "Supports academic training documentation requirements",
     ],
   },
   {
@@ -1509,26 +1509,6 @@ Object.assign(translations.ar.features, {
   ctaSubtitle:
     "يتوفر Pharmacy Training Tracker حصرا من خلال باقات تفعيل مؤسسية للجامعات والكليات.",
 });
-
-translations.ar.home.featureSummary[0] = {
-  ...translations.ar.home.featureSummary[0],
-  title: "الحضور وسجلات الوصفات",
-  body:
-    "تتبع تسجيل الحضور والخروج ونشاط الوصفات، مع توفر نفس قوائم أدوية FDA المخزنة داخل تطبيق أندرويد وتطبيق الويب لتفاصيل الشكل الدوائي والتركيز وطريقة الإعطاء.",
-};
-
-translations.ar.features.details[1] = {
-  ...translations.ar.features.details[1],
-  body:
-    "تسجيل جمع الوصفات أثناء التدريب الصيدلاني بإشراف مع تفاصيل دوائية منظمة. يجب أن يستخدم تطبيق أندرويد وتطبيق الويب نفس قوائم أدوية FDA المخزنة لدعم اختيار الدواء وتسجيل الشكل الدوائي والتركيز وطريقة الإعطاء والكمية وسياق الوصفة دون تخزين معلومات تكشف هوية المريض.",
-  bullets: [
-    "قوائم أدوية FDA مخزنة داخل تطبيق أندرويد وتطبيق الويب",
-    "الشكل الدوائي والتركيز وطريقة الإعطاء والكمية",
-    "سجلات وصفات لكل جلسة تدريب بإشراف",
-    "سجلات لا تكشف هوية المرضى للمراجعة الأكاديمية",
-  ],
-};
-translations.ar.features.cards = translations.ar.features.details.map(({ title, body }) => ({ title, body }));
 
 Object.assign(translations.en.activation, {
   pageEyebrow: "Institutional access only",
