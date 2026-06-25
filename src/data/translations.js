@@ -698,11 +698,13 @@ Object.assign(translations.en.contact, {
       title: "Phone / WhatsApp",
       value: "+964 750 822 6910",
       body: "Available via call or WhatsApp.",
+      hidden: true,
     },
     {
       title: "Location",
       value: "Iraq",
       body: "We serve pharmacy colleges and universities across the region.",
+      hidden: true,
     },
     {
       title: "Response time",
@@ -1050,7 +1052,7 @@ Object.assign(translations.en.footer, {
   legalTitle: "Legal & Contact",
   faq: "FAQ",
   email: "moleculartracker@gmail.com",
-  phone: "+964 750 822 6910",
+  phone: "",
   copyright: "© 2026 MolecularTracker. All rights reserved.",
   domain: "moleculartracker.com",
 });
@@ -1155,7 +1157,7 @@ Object.assign(translations.ar.footer, {
   legalTitle: "القانوني والتواصل",
   faq: "الأسئلة الشائعة",
   email: "moleculartracker@gmail.com",
-  phone: "+964 750 822 6910",
+  phone: "",
   copyright: "© 2026 MolecularTracker. جميع الحقوق محفوظة.",
   domain: "moleculartracker.com",
 });

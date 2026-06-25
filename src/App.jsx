@@ -423,8 +423,12 @@ function Footer({ t, setPage }) {
               })}
               <span className="pt-4 text-lg leading-8 text-white/75">
                 {t.footer.email}
-                <br />
-                {t.footer.phone}
+                {t.footer.phone ? (
+                  <>
+                    <br />
+                    {t.footer.phone}
+                  </>
+                ) : null}
               </span>
             </div>
           </div>
@@ -1073,10 +1077,12 @@ function ActivationPage({ t, setPage }) {
                     <Mail className="h-5 w-5 text-emerald-600" aria-hidden="true" />
                     {t.footer.email}
                   </a>
-                  <a className="inline-flex items-center gap-3" href="tel:+9647508226910">
-                    <Phone className="h-5 w-5 text-emerald-600" aria-hidden="true" />
-                    {t.footer.phone}
-                  </a>
+                  {t.footer.phone ? (
+                    <a className="inline-flex items-center gap-3" href="tel:+9647508226910">
+                      <Phone className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                      {t.footer.phone}
+                    </a>
+                  ) : null}
                 </div>
                 <p className="mt-5 text-sm font-semibold leading-6 text-black">{t.activation.officialEmailReminder}</p>
               </article>
@@ -1163,7 +1169,11 @@ function ContactPage({ t, setPage }) {
     }
   }
 
+  const hideDirectContactDetails = true;
   const contactIcons = [Mail, Phone, MapPin, Clock3];
+  const contactCards = t.contact.infoCards
+    .map((card, index) => ({ card, index, Icon: contactIcons[index % contactIcons.length] }))
+    .filter(({ card, index }) => !card.hidden && !(hideDirectContactDetails && (index === 1 || index === 2)));
 
   return (
     <>
@@ -1191,8 +1201,7 @@ function ContactPage({ t, setPage }) {
       <section className="bg-clinical-50 py-14">
         <div className="mx-auto grid max-w-[1220px] gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div className="grid content-start gap-5">
-            {t.contact.infoCards.map((card, index) => {
-              const Icon = contactIcons[index % contactIcons.length];
+            {contactCards.map(({ card, Icon }) => {
               return (
                 <article key={card.title} className="grid grid-cols-[3rem_1fr] gap-4 rounded-lg border border-clinical-200 bg-white p-6 shadow-sm">
                   <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-clinical-50 text-navy-800">
