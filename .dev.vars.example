@@ -3,3 +3,6 @@ GITHUB_REPO="pharma-train-tracker-website"
 GITHUB_RELEASE_TAG="1"
 APK_ASSET_NAME="pharmacy_training_tracker.apk"
 GITHUB_TOKEN="paste-token-only-in-.dev.vars-or-cloudflare-secret"
+
+SUPABASE_OWNTRACKS_URL="https://rchlbowrhamvwalcnppu.supabase.co/functions/v1/owntracks-location-ingest"
+OWNTRACKS_GATEWAY_SECRET="paste-same-random-secret-in-cloudflare-and-supabase"
