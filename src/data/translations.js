@@ -1040,6 +1040,38 @@ Object.assign(translations.en.download, {
   officialTitle: "Official source only",
   officialBody:
     "Always download the APK directly from moleculartracker.com. Do not install APK files shared via messaging apps, third-party stores, or unofficial links.",
+  ios: {
+    eyebrow: "iPhone web app",
+    title: "Pharmacy Training Tracker for iPhone",
+    subtitle:
+      "Use the iPhone web app in Safari. It is a web-based app, not an App Store or TestFlight installation.",
+    href: "https://iphone.moleculartracker.com",
+    button: "Open iPhone Web App",
+    notice:
+      "Open the iPhone web app from Safari. Students who need GPS attendance check-in/check-out should complete the OwnTracks setup guide inside the web app.",
+    tiles: [
+      { label: "Platform", value: "iPhone Web" },
+      { label: "Access", value: "Safari" },
+      { label: "Install option", value: "Add to Home Screen" },
+    ],
+    setupTitle: "How to use on iPhone",
+    setupSteps: [
+      "Open the iPhone web app link in Safari.",
+      "Optional: Safari > Share > Add to Home Screen.",
+      "Sign in with your institution account.",
+      "Students who need attendance check-in/check-out should follow the OwnTracks setup guide inside the web app.",
+    ],
+    prerequisitesTitle: "Prerequisites",
+    prerequisites: [
+      "iPhone with Safari",
+      "Internet connection",
+      "Location permission for attendance features",
+      "OwnTracks app for students who will check in/out",
+    ],
+    infoTitle: "OwnTracks requirement",
+    infoBody:
+      "OwnTracks is required only for student GPS check-in/check-out. It is not required for login, and supervisors or coordinators can use the same iPhone web app link without OwnTracks.",
+  },
 });
 
 Object.assign(translations.en.footer, {
@@ -1200,6 +1232,38 @@ Object.assign(translations.ar.download, {
   officialTitle: "مصدر رسمي فقط",
   officialBody:
     "قم دائما بتحميل APK مباشرة من moleculartracker.com. لا تثبت ملفات APK مرسلة عبر تطبيقات المراسلة أو المتاجر غير الرسمية أو الروابط غير المعتمدة.",
+  ios: {
+    eyebrow: "تطبيق ويب للآيفون",
+    title: "Pharmacy Training Tracker للآيفون",
+    subtitle:
+      "استخدم تطبيق الآيفون عبر Safari. هذا تطبيق ويب وليس تثبيتا من App Store أو TestFlight.",
+    href: "https://iphone.moleculartracker.com",
+    button: "فتح تطبيق الآيفون",
+    notice:
+      "افتح تطبيق الآيفون من Safari. الطلاب الذين يحتاجون إلى تسجيل الحضور والخروج عبر GPS يجب أن يكملوا إعداد OwnTracks من داخل تطبيق الويب.",
+    tiles: [
+      { label: "النظام", value: "ويب للآيفون" },
+      { label: "الوصول", value: "Safari" },
+      { label: "خيار التثبيت", value: "إضافة إلى الشاشة الرئيسية" },
+    ],
+    setupTitle: "طريقة الاستخدام على الآيفون",
+    setupSteps: [
+      "افتح رابط تطبيق الآيفون في Safari.",
+      "اختياري: Safari > مشاركة > إضافة إلى الشاشة الرئيسية.",
+      "سجل الدخول بحساب المؤسسة.",
+      "الطلاب الذين يحتاجون إلى تسجيل الحضور والخروج يتبعون إرشادات إعداد OwnTracks داخل تطبيق الويب.",
+    ],
+    prerequisitesTitle: "المتطلبات",
+    prerequisites: [
+      "جهاز iPhone مع Safari",
+      "اتصال بالإنترنت",
+      "السماح بالموقع لميزات الحضور",
+      "تطبيق OwnTracks للطلاب الذين سيسجلون الحضور والخروج",
+    ],
+    infoTitle: "متطلب OwnTracks",
+    infoBody:
+      "OwnTracks مطلوب فقط لتسجيل حضور وخروج الطلاب عبر GPS. لا يلزم لتسجيل الدخول، ويمكن للمشرفين أو المنسقين استخدام رابط تطبيق الآيفون نفسه دون OwnTracks.",
+  },
 });
 
 const enFeatureDetails = [

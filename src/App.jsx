@@ -799,6 +799,7 @@ function DownloadPage({ t, setPage }) {
     [t.download.platformLabel, t.download.platform],
     [t.download.release.sizeLabel, t.download.release.size],
   ];
+  const iphoneItems = t.download.ios.tiles;
 
   return (
     <>
@@ -927,6 +928,92 @@ function DownloadPage({ t, setPage }) {
               </ul>
             </article>
           </div>
+        </div>
+
+        <div className="mx-auto mt-14 max-w-[1220px] px-4 sm:px-6 lg:px-8">
+          <article className="rounded-lg border border-clinical-200 bg-white p-6 shadow-soft sm:p-7">
+            <div className="grid gap-8 lg:grid-cols-[0.95fr_1fr]">
+              <div>
+                <p className="text-[13px] font-bold uppercase tracking-[0.08em] text-emerald-700">
+                  {t.download.ios.eyebrow}
+                </p>
+                <div className="mt-5 flex items-center gap-4">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-lg bg-navy-900 text-white">
+                    <Smartphone className="h-7 w-7" aria-hidden="true" />
+                  </span>
+                  <div>
+                    <h2 className="text-xl font-bold text-navy-900">{t.download.ios.title}</h2>
+                    <p className="mt-1 text-sm leading-6 text-black">{t.download.ios.subtitle}</p>
+                  </div>
+                </div>
+
+                <dl className="mt-6 grid gap-4 sm:grid-cols-3">
+                  {iphoneItems.map((item) => (
+                    <div key={item.label} className="rounded-lg bg-clinical-50 p-4">
+                      <dt className="text-sm text-black">{item.label}</dt>
+                      <dd className="mt-2 text-base font-bold text-navy-900">{item.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+
+                <a
+                  className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-emerald-600 px-5 text-base font-semibold text-white shadow-sm transition hover:bg-emerald-700 sm:w-auto"
+                  href={t.download.ios.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Smartphone className="h-4 w-4" aria-hidden="true" />
+                  <span>{t.download.ios.button}</span>
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </a>
+
+                <p className="mt-5 flex gap-3 rounded-lg border border-emerald-200 bg-emerald-50 p-4 text-sm leading-6 text-emerald-900">
+                  <ShieldCheck className="mt-0.5 h-5 w-5 flex-none text-emerald-700" aria-hidden="true" />
+                  <span>{t.download.ios.notice}</span>
+                </p>
+              </div>
+
+              <div className="grid gap-5">
+                <article className="rounded-lg border border-clinical-200 bg-white p-6">
+                  <h3 className="font-bold text-navy-900">{t.download.ios.setupTitle}</h3>
+                  <ol className="mt-5 grid gap-4">
+                    {t.download.ios.setupSteps.map((step, index) => (
+                      <li key={step} className="grid grid-cols-[1.75rem_1fr] gap-3 text-sm leading-6 text-black">
+                        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-navy-900 text-xs font-bold text-white">
+                          {index + 1}
+                        </span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </article>
+
+                <article className="rounded-lg border border-clinical-200 bg-white p-6">
+                  <h3 className="font-bold text-navy-900">{t.download.ios.prerequisitesTitle}</h3>
+                  <ul className="mt-4 grid gap-2">
+                    {t.download.ios.prerequisites.map((item) => (
+                      <li key={item} className="flex gap-3 text-sm leading-6 text-black">
+                        <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-emerald-600" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+
+                <article className="rounded-lg border border-navy-800/20 bg-navy-50 p-6">
+                  <div className="grid grid-cols-[3rem_1fr] gap-4">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-clinical-100 text-navy-800">
+                      <MapPin className="h-5 w-5" aria-hidden="true" />
+                    </span>
+                    <div>
+                      <h3 className="font-bold text-navy-900">{t.download.ios.infoTitle}</h3>
+                      <p className="mt-3 text-sm leading-6 text-black">{t.download.ios.infoBody}</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </>
