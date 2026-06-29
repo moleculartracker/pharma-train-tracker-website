@@ -75,7 +75,15 @@ function getInitialPage() {
   return translations.en.nav.some((item) => item.id === hash) ? hash : "home";
 }
 
-function Button({ children, variant = "primary", onClick, type = "button", icon: Icon }) {
+function Button({
+  children,
+  variant = "primary",
+  onClick,
+  type = "button",
+  icon: Icon,
+  href,
+  download,
+}) {
   const variants = {
     primary: "bg-emerald-600 text-white shadow-sm hover:bg-emerald-700",
     dark: "bg-navy-900 text-white shadow-sm hover:bg-navy-800",
@@ -88,14 +96,25 @@ function Button({ children, variant = "primary", onClick, type = "button", icon:
     ghostLight: "text-white hover:bg-white/10",
   };
 
-  return (
-    <button
-      type={type}
-      onClick={onClick}
-      className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-5 text-base font-semibold transition ${variants[variant]}`}
-    >
+  const className = `inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-5 text-base font-semibold transition ${variants[variant]}`;
+  const content = (
+    <>
       {Icon ? <Icon className="h-4 w-4" aria-hidden="true" /> : null}
       <span>{children}</span>
+    </>
+  );
+
+  if (href) {
+    return (
+      <a href={href} download={download} className={className}>
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <button type={type} onClick={onClick} className={className}>
+      {content}
     </button>
   );
 }
@@ -241,7 +260,12 @@ function CTASection({ t, setPage }) {
           <Button variant="light" icon={BadgeCheck} onClick={() => setPage("activation")}>
             {t.actions.requestActivation}
           </Button>
-          <Button variant="ghostLight" icon={Download} onClick={() => setPage("download")}>
+          <Button
+            variant="ghostLight"
+            icon={Download}
+            href={t.download.release.href}
+            download
+          >
             {t.actions.downloadApk}
           </Button>
         </div>
@@ -552,7 +576,12 @@ function Hero({ t, setPage }) {
             <Button icon={ArrowRight} onClick={() => setPage("activation")}>
               {t.actions.requestActivation}
             </Button>
-            <Button variant="secondary" icon={Download} onClick={() => setPage("download")}>
+            <Button
+              variant="secondary"
+              icon={Download}
+              href={t.download.release.href}
+              download
+            >
               {t.actions.downloadApk}
             </Button>
             <Button variant="secondary" onClick={() => setPage("contact")}>
