@@ -29,7 +29,7 @@ npx wrangler pages deploy dist --project-name moleculartracker
 
 ## APK Download Proxy
 
-The website download button points to `/download/apk`. That route is handled by a Cloudflare Pages Function in `functions/download/apk.js`, so visitors do not see the GitHub release URL.
+The website download button points to `/downloads/pharmacy-training-tracker-v1.0.0.apk`. That route is handled by a Cloudflare Pages Function in `functions/downloads/[[path]].js`, so visitors do not see the GitHub release URL. The legacy `/download/apk` route remains available through `functions/download/apk.js`.
 
 If the GitHub release asset is private, create a GitHub fine-grained token with read access to the repository contents, then add it as a Cloudflare Pages secret named `GITHUB_TOKEN`.
 
